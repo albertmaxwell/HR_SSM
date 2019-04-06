@@ -1,8 +1,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <html>
 <head>
     <title>员工管理页面</title>
+
+
+    <script src="<%=request.getContextPath()%>/plug-in/jquery/jquery-1.9.1.js"></script>
+
+    <script src="<%=request.getContextPath()%>/plug-in/layer/layer/layer.js"></script>
+
 </head>
 <body>
 <div class="hrms_container">
@@ -16,9 +23,9 @@
         <%@ include file="./commom/leftsidebar.jsp"%>
 
         <!-- 中间员工表格信息展示内容 -->
-        <div class="emp_info col-sm-10">
+        <div   class="emp_info col-sm-10">
 
-            <div class="panel panel-success">
+            <div style="width: 1270px"  class="panel panel-success">
                 <!-- 路径导航 -->
                 <div class="panel-heading">
                     <ol class="breadcrumb">
@@ -27,7 +34,7 @@
                     </ol>
                 </div>
                 <!-- Table -->
-                <table class="table table-bordered table-hover" id="emp_table">
+                <table  class="table table-bordered table-hover" id="emp_table">
                     <thead>
                     <th>员工编号</th>
                     <th>员工姓名</th>
@@ -55,11 +62,11 @@
 
                 <div class="panel-body">
                     <div class="table_items">
-                        当前第<span class="badge">${curPage}</span>页，共有<span class="badge">${totalPages}</span>页，总记录数<span class="badge">${totalItems}</span>条。
+                        当前第<span style="font-size: large;font-weight: bolder" class="badge">${curPage}</span>页，共有<span class="badge">${totalPages}</span>页，总记录数<span class="badge">${totalItems}</span>条。
                     </div>
                     <nav aria-label="Page navigation" class="pull-right">
                         <ul class="pagination">
-                            <li><a href="/hrms/emp/getEmpList?pageNo=1">首页</a></li>
+                            <li><a style="font-size: large;font-weight: bolder" href="/hrms/emp/getEmpList?pageNo=1">首页</a></li>
                             <c:if test="${curPage==1}">
                                 <li class="disabled">
                                     <a href="#" aria-label="Previous" class="prePage">
@@ -98,7 +105,7 @@
                                     </a>
                                 </li>
                             </c:if>
-                            <li><a href="/hrms/emp/getEmpList?pageNo=${totalPages}">尾页</a></li>
+                            <li><a style="font-size: large;font-weight: bolder" href="/hrms/emp/getEmpList?pageNo=${totalPages}">尾页</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -139,13 +146,17 @@
         var curPage = ${curPage};
         var delEmpId = $(this).parent().parent().find("td:eq(0)").text();
         var delEmpName = $(this).parent().parent().find("td:eq(1)").text();
+
+
+
         if (confirm("确认删除【" + delEmpName+ "】的信息吗？")){
             $.ajax({
                 url:"/hrms/emp/deleteEmp/"+delEmpId,
                 type:"DELETE",
                 success:function (result) {
                     if (result.code == 100){
-                        alert("删除成功！");
+                        layer.alert("删除成功", {icon:5} );
+                        return false;
                         window.location.href="/hrms/emp/getEmpList?pageNo="+curPage;
                     }else {
                         alert(result.extendInfo.emp_del_error);

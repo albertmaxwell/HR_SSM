@@ -18,7 +18,7 @@
         <div class="hrms_main_ad col-sm-10">
             <div class="panel panel-success">
                 <div class="panel-heading">
-                    <h3 style="text-align: center;">欢迎进入XXX公司人力资源管理系统！</h3>
+                    <h3 style="text-align: center;">欢迎进入CRM合同管理系统</h3>
                 </div>
                 <div class="panel-body" style="position:relative; top:-15px;">
                     <div id="hrms_carousel_1" class="carousel slide" data-ride="carousel">

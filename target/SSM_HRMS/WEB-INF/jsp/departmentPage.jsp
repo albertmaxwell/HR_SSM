@@ -1,8 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html>
 <head>
     <title>部门管理页面</title>
+
 </head>
 <body>
 <div class="hrms_dept_container">
@@ -50,11 +52,11 @@
 
                 <div class="panel-body">
                     <div class="table_items">
-                        当前第<span class="badge">${curPageNo}</span>页，共有<span class="badge">${totalPages}</span>页，总记录数<span class="badge">${totalItems}</span>条。
+                        当前第<span style="font-size: large;font-weight: bolder" class="badge">${curPageNo}</span>页，共有<span class="badge">${totalPages}</span>页，总记录数<span class="badge">${totalItems}</span>条。
                     </div>
                     <nav aria-label="Page navigation" class="pull-right">
                         <ul class="pagination">
-                            <li><a href="/hrms/dept/getDeptList?pageNo=1">首页</a></li>
+                            <li><a style="font-size: large;font-weight: bolder" href="/hrms/dept/getDeptList?pageNo=1">首页</a></li>
                             <c:if test="${curPageNo==1}">
                                 <li class="disabled">
                                     <a href="#" aria-label="Previous" class="prePage">
@@ -93,7 +95,7 @@
                                     </a>
                                 </li>
                             </c:if>
-                            <li><a href="/hrms/dept/getDeptList?pageNo=${totalPages}">尾页</a></li>
+                            <li><a style="font-size: large;font-weight: bolder" href="/hrms/dept/getDeptList?pageNo=${totalPages}">尾页</a></li>
                         </ul>
                     </nav>
                 </div>

@@ -11,46 +11,49 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<div class="hrms_brand_nav">
-    <nav class="navbar navbar-inverse navbar-static-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
+<div style="background-color: #384766;height: 72px" class="hrms_brand_nav">
+    <nav   class="navbar navbar-inverse navbar-static-top">
+        <div style="background-color: #26344b;" class="container-fluid">
+            <div  class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hrms-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" id="company_logo" href="#">XXX公司LOGO</a>
+                <a style="font-size: large;font-weight: bolder" class="navbar-brand" id="company_logo" href="#">CEMLOGO</a>
             </div>
 
             <div class="collapse navbar-collapse" id="hrms-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="#">公司介绍 <span class="sr-only">(current)</span>  </a>
+                        <a style="font-size: large;font-weight: bolder" href="#">公司介绍 <span class="sr-only">(current)</span>  </a>
                     </li>
-                    <li><a href="#">人力资源部</a></li>
-                    <li><a href="#">请假申请</a></li>
-                    <li><a href="#">报销申请</a></li>
-                    <li><a href="#">出勤记录</a></li>
+                    <li><a style="font-size: large;font-weight: bolder" href="#">人力资源部</a></li>
+                    <li><a style="font-size: large;font-weight: bolder" href="#">请假申请</a></li>
+                    <li><a style="font-size: large;font-weight: bolder" href="#">报销申请</a></li>
+                    <li><a style="font-size: large;font-weight: bolder" href="#">出勤记录</a></li>
                 </ul>
 
                 <form class="navbar-form navbar-left">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="站内搜索">
                     </div>
-                    <button type="submit" class="btn btn-default">搜索</button>
+                    <button type="submit" class="btn btn-default"><span style="font-weight: bold;font-size: large">搜索</span></button>
                 </form>
 
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">账号管理 <span class="caret"></span></a>
-                        <ul class="dropdown-menu nav nav-pills nav-stacked">
+                        <a style="font-weight: bold;font-size: large" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">账号管理 <span class="caret"></span></a>
+                        <ul style="font-size: large;font-weight: bolder" class="dropdown-menu nav nav-pills nav-stacked">
                             <li class="active"><a href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 修改信息</a></li>
                             <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 头像更换</a></li>
                             <li><a href="#" class="hrms_logout"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> 账号退出</a></li>
