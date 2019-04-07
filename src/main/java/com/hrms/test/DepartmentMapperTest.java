@@ -1,5 +1,7 @@
 import com.hrms.bean.Department;
+import com.hrms.bean.RightsMan;
 import com.hrms.mapper.DepartmentMapper;
+import com.hrms.mapper.RightsManMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +20,7 @@ public class DepartmentMapperTest {
     @Autowired
     private DepartmentMapper departmentMapper;
 
+
     @Test
     public void insertDeptTest(){
         Department department = new Department(null, "黎明3", "测试部");
@@ -27,8 +30,8 @@ public class DepartmentMapperTest {
 
     @Test
     public void updateDeptTest(){
-        Department department = new Department(null, "Tomsom", "研发部");
-        int res = departmentMapper.updateDeptById(1, department);
+        Department department = new Department(3, "马云", "研发部");
+        int res = departmentMapper.updateDeptById(3, department);
         System.out.println(res);
     }
 
@@ -73,10 +76,13 @@ public class DepartmentMapperTest {
         }
     }
 
+
     @Test
     public void countDeptsTest(){
         int count = departmentMapper.countDepts();
         System.out.println(count);
     }
+
+
 
 }

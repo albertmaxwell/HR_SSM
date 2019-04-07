@@ -5,6 +5,7 @@
     <sql id="table_name">
         tbl_dept
     </sql>
+
     <sql id="select_fields">
         dept_id , dept_name, dept_leader
     </sql>
@@ -21,6 +22,7 @@
         <include refid="table_name"></include>
         LIMIT #{offset}, #{limit}
     </select>
+
 
     <update id="updateDeptById" parameterType="com.hrms.bean.Department">
         UPDATE

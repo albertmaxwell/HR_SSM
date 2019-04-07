@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hrms.mapper.RightsManMapper">
+
+
+    <sql id="table_name">
+        tbl_rights
+    </sql>
+
+    <sql id="select_fields">
+      rights_id, rights_name, rights_account, rights_password
+    </sql>
+
+    <resultMap id="rightsResult" type="com.hrms.bean.RightsMan">
+        <id column="rights_id" property="rightsId"></id>
+        <result column="rights_name" property="rightsName"></result>
+        <result column="rights_account" property="rightsAccount"></result>
+        <result column="rights_password" property="rightsPassword"></result>
+    </resultMap>
+    <select id="selectRightsByLimitAndOffset" resultMap="rightsResult">
+        SELECT
+        rights_id as 'rightsId', rights_name as 'rightsName', rights_account as 'rightsAccount',
+        rights_password  as 'rightsPassword'
+        FROM
+        <include refid="table_name"></include>
+         LIMIT  #{offset},  #{limit}
+    </select>
+
+    <update id="updateRightsById" parameterType="com.hrms.bean.RightsMan">
+        UPDATE
+        <include refid="table_name"></include>
+        SET
+        rights_name = #{rightsMan.rightsName, jdbcType = VARCHAR},
+        rights_account = #{rightsMan.rightsAccount, jdbcType = VARCHAR},
+        rights_password = #{rightsMan.rightsPassword, jdbcType = VARCHAR}
+        WHERE
+        rights_id = #{rightsId}
+    </update>
+
+    <select id="selectOneById" parameterType="java.lang.Integer" resultType="com.hrms.bean.RightsMan">
+        SELECT
+        rights_id rightsId, rights_name rightsName, rights_account rightsAccount, rights_password rightsPassword
+        FROM
+        <include refid="table_name"/>
+        WHERE
+        rights_id = #{rightsId}
+    </select>
+
+
+</mapper>

@@ -1,6 +1,12 @@
 package com.hrms.controller;
 
+import com.hrms.bean.RightsMan;
+import com.hrms.service.DepartmentService;
+import com.hrms.service.LoginService;
 import com.hrms.util.JsonMsg;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,6 +21,10 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 @RequestMapping(value = "/hrms")
 public class LoginController {
+    private static Logger logger = LogManager.getLogger(DepartmentController.class.getName());
+
+    @Autowired
+    LoginService loginService;
 
     /**
      * 登录：跳转到登录页面
@@ -35,8 +45,11 @@ public class LoginController {
     public JsonMsg dologin(HttpServletRequest request){
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        System.out.println(username + password);
-        if (!"admin1234".equals(username + password)){
+
+        RightsMan rightsMan=null;
+        rightsMan = loginService.getUser(username,password);
+
+        if (!(rightsMan != null)){
             return JsonMsg.fail().addInfo("login_error", "输入账号用户名与密码不匹配，请重新输入！");
         }
         return JsonMsg.success();

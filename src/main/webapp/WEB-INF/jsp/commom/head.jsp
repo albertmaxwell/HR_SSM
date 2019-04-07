@@ -52,7 +52,7 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a style="font-weight: bold;font-size: large" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">账号管理 <span class="caret"></span></a>
+                        <a style="font-weight: bold;font-size: large" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-weight: bold;" class="glyphicon glyphicon-user">账号管理 <span  class="caret"></span></a>
                         <ul style="font-size: large;font-weight: bolder" class="dropdown-menu nav nav-pills nav-stacked">
                             <li class="active"><a href="#"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 修改信息</a></li>
                             <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 头像更换</a></li>

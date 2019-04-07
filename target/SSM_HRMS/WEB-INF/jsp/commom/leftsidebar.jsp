@@ -18,9 +18,9 @@
                 <span class="navigation_bar_font" class="glyphicon glyphicon-user" aria-hidden="true">员工管理</span>
             </a>
             <ul class="nav nav-pills nav-stacked" id="collapse_emp">
-                <li class="navigation_bar_font" role="presentation"><a href="#" class="emp_info"><font color="#ffffff">员工信息</font></a></li>
-                <li class="navigation_bar_font" role="presentation"><a href="#" role="button" class="emp_add_btn" data-toggle="modal" data-target=".emp-add-modal"><font color="#ffffff">员工新增</font></a></li>
-                <li class="navigation_bar_font" role="presentation"><a href="#" class="emp_clearall_btn"><font color="#ffffff">员工清零</font></a></li>
+                <li class="navigation_bar_font" role="presentation"><a href="#" class="emp_info"><span class="glyphicon glyphicon-user"></span><font style="color: #ffffff;padding-left: 13px">员工信息</font></a></li>
+                <li class="navigation_bar_font" role="presentation"><a href="#" role="button" class="emp_add_btn" data-toggle="modal" data-target=".emp-add-modal"><font color="#ffffff"><span class="glyphicon glyphicon-plus"></span><font style="color: #ffffff;padding-left: 13px">员工新增</font></font></a></li>
+                <li class="navigation_bar_font" role="presentation"><a href="#" clasemp_add_btns="emp_clearall_btn"><font color="#ffffff"><span class="glyphicon glyphicon-minus"></span><font style="color: #ffffff;padding-left: 13px">员工清零</font></font></a></li>
             </ul>
         </li>
     </ul>
@@ -30,12 +30,24 @@
                 <span class="navigation_bar_font" class="glyphicon glyphicon-cloud" aria-hidden="true">部门管理</span>
             </a>
             <ul class="nav nav-pills nav-stacked" id="collapse_dept">
-                <li class="navigation_bar_font" role="presentation"><a href="#" class="dept_info"><font color="#ffffff">部门信息</font></a></li>
-                <li class="navigation_bar_font" role="presentation"><a href="#" class="dept_add_btn" data-toggle="modal" data-target=".dept-add-modal"><font color="#ffffff">部门新增</font></a></li>
-                <li class="navigation_bar_font" role="presentation"><a href="#" class="dept_clearall_btn"><font color="#ffffff">部门清零</font></a></li>
+                <li class="navigation_bar_font" role="presentation"><a href="#" class="dept_info"><span class="glyphicon glyphicon-user"></span><font style="color: #ffffff;padding-left: 13px">部门信息</font></a></li>
+                <li class="navigation_bar_font" role="presentation"><a href="#" class="dept_add_btn" data-toggle="modal" data-target=".dept-add-modal"><span class="glyphicon glyphicon-plus"></span><font style="color: #ffffff;padding-left: 10px">部门新增</font></a></li>
+                <li class="navigation_bar_font" role="presentation"><a href="#" class="dept_clearall_btn"><span class="glyphicon glyphicon-minus"></span><font style="color: #ffffff;padding-left: 10px">部门清零</font></a></li>
             </ul>
         </li>
     </ul>
+    <ul class="nav nav-pills nav-stacked dept_sidebar">
+        <li role="presentation" class="active">
+            <a href="#"  data-toggle="collapse" data-target="#collapse_dept">
+                <span class="navigation_bar_font" class="glyphicon glyphicon-cloud" aria-hidden="true">权限管理</span>
+            </a>
+            <ul class="nav nav-pills nav-stacked" id="collapse_dept">
+                <li class="navigation_bar_font" role="presentation"><a href="#" class="rights_manage"><span class="glyphicon glyphicon-user"></span><font style="color: #ffffff;padding-left: 13px">权限设置</font></a></li>
+                <li class="navigation_bar_font" role="presentation"><a href="#" class="rights_add_btn" data-toggle="modal" data-target=".rights-add-modal"><span class="glyphicon glyphicon-user"></span><font style="color: #ffffff;padding-left: 13px">用户添加</font></a></li>
+            </ul>
+        </li>
+    </ul>
+
 
 </div><!-- /.panel-group，#hrms_sidebar_left -->
 
@@ -47,6 +59,11 @@
     //跳转到部门页面
     $(".dept_info").click(function () {
         $(this).attr("href", "/hrms/dept/getDeptList");
+    });
+    //跳转到部门页面
+    $(".rights_manage").click(function () {
+
+        $(this).attr("href", "/hrms/rights/getRightsList");
     });
     //员工清零这个功能暂未实现
     $(".emp_clearall_btn").click(function () {
