@@ -6,15 +6,15 @@ package com.hrms.bean;
  */
 public class ContractsEntity {
 
-	private String contractsId;
+	private Integer contractsId;
 	private String contractsCode;
 	private String contractsTitle;
 
-	public String getContractsId() {
+	public Integer getContractsId() {
 		return contractsId;
 	}
 
-	public void setContractsId(String contractsId) {
+	public void setContractsId(Integer contractsId) {
 		this.contractsId = contractsId;
 	}
 
@@ -34,12 +34,7 @@ public class ContractsEntity {
 		this.contractsTitle = contractsTitle;
 	}
 
-	public ContractsEntity(){
-
-	}
-
-
-	public ContractsEntity(String contractsId, String contractsCode, String contractsTitle) {
+	public ContractsEntity(Integer contractsId, String contractsCode, String contractsTitle) {
 		this.contractsId = contractsId;
 		this.contractsCode = contractsCode;
 		this.contractsTitle = contractsTitle;
@@ -48,9 +43,16 @@ public class ContractsEntity {
 	@Override
 	public String toString() {
 		return "ContractsEntity{" +
-				"contractsId='" + contractsId + '\'' +
+				"contractsId=" + contractsId +
 				", contractsCode='" + contractsCode + '\'' +
 				", contractsTitle='" + contractsTitle + '\'' +
 				'}';
 	}
+
+	public ContractsEntity(){
+
+	}
+
+
+
 }

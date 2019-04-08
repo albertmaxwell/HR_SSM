@@ -25,5 +25,24 @@
         LIMIT  #{offset},  #{limit}
     </select>
 
+    <update id="updateConById" parameterType="com.hrms.bean.ContractsEntity">
+        UPDATE
+        <include refid="table_name"></include>
+        SET
+        contracts_code = #{contractsEntity.contractsCode, jdbcType = VARCHAR},
+        contracts_title = #{contractsEntity.contractsTitle, jdbcType = VARCHAR}
+
+        WHERE
+        contracts_id = #{conId}
+    </update>
+
+    <select id="selectOneById" parameterType="java.lang.Integer" resultType="com.hrms.bean.ContractsEntity">
+        SELECT
+        contracts_id contractsId, contracts_code contractsCode, contracts_title contractsTitle
+        FROM
+        <include refid="table_name"/>
+        WHERE
+        contracts_id = #{conId}
+    </select>
 
 </mapper>

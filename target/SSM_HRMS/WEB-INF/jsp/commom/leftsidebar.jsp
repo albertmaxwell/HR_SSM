@@ -45,7 +45,7 @@
             </a>
             <ul class="nav nav-pills nav-stacked" id="collapse_dept">
                 <li class="navigation_bar_font" role="presentation"><a href="#" class="contracts_info"><span class="glyphicon glyphicon-user"></span><font style="color: #ffffff;padding-left: 13px">合同信息</font></a></li>
-                <li class="navigation_bar_font" role="presentation"><a href="#" class="dept_add_btn" data-toggle="modal" data-target=".dept-add-modal"><span class="glyphicon glyphicon-plus"></span><font style="color: #ffffff;padding-left: 10px">新增合同</font></a></li>
+                <li class="navigation_bar_font" role="presentation"><a href="#" class="con_add_btn" data-toggle="modal" data-target=".con-add-modal"><span class="glyphicon glyphicon-plus"></span><font style="color: #ffffff;padding-left: 10px">新增合同</font></a></li>
                 <li class="navigation_bar_font" role="presentation"><a href="#" class="dept_clearall_btn"><span class="glyphicon glyphicon-minus"></span><font style="color: #ffffff;padding-left: 10px">数据统计</font></a></li>
             </ul>
         </li>

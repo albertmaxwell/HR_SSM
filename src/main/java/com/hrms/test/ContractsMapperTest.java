@@ -2,6 +2,8 @@ package com.hrms.test;
 
 import com.hrms.bean.ContractsEntity;
 import com.hrms.bean.Department;
+import com.hrms.bean.RightsMan;
+import com.hrms.mapper.ContractsMapper;
 import com.hrms.service.ContractsService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,6 +22,8 @@ import java.util.List;
 public class ContractsMapperTest {
 	@Autowired
 	ContractsService contractsService;
+	@Autowired
+	ContractsMapper contractsMapper;
 
 	@Test
 	public void selectConByLimitAndOffsetTest(){
@@ -28,6 +32,26 @@ public class ContractsMapperTest {
 		for (int i = 0; i < conList.size(); i++) {
 			System.out.println(conList.get(i));
 		}
+	}
+
+	@Test
+	public void updateConTest(){
+		ContractsEntity contractsEntity = new ContractsEntity(3, "002", "test");
+		int res = contractsService.updateConById(3, contractsEntity);
+		System.out.println(res);
+	}
+
+	@Test
+	public void selectOneByIdTest(){
+		ContractsEntity contractsEntity = contractsService.getConById(1);
+		System.out.println(contractsEntity);
+	}
+
+	@Test
+	public void insertCONTest(){
+		ContractsEntity contractsEntity = new ContractsEntity(1, "233","2");
+		int res = contractsService.addCon(contractsEntity);
+		System.out.println(res);
 	}
 
 

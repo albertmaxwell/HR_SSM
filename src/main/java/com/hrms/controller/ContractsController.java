@@ -2,16 +2,16 @@ package com.hrms.controller;
 
 import com.hrms.bean.ContractsEntity;
 import com.hrms.bean.Department;
+import com.hrms.bean.RightsMan;
 import com.hrms.mapper.ContractsMapper;
 import com.hrms.service.ContractsService;
 import com.hrms.service.DepartmentService;
+import com.hrms.util.JsonMsg;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
@@ -54,6 +54,57 @@ public class ContractsController {
 		return mv;
 	}
 
+	/**
+	 * 部门更改
+	 * @param deptId
+	 * @param department
+	 * @return
+	 */
+	@RequestMapping(value = "/updateCon/{conId}", method = RequestMethod.PUT)
+	@ResponseBody
+	public JsonMsg updateConById(@PathVariable("conId") Integer conId, ContractsEntity contractsEntity){
+
+		int res = 0;
+		if (conId > 0){
+			res = contractsService.updateConById(conId, contractsEntity);
+		}
+		if (res != 1){
+			return JsonMsg.fail().addInfo("update_dept_error", "部门更新失败");
+		}
+		return JsonMsg.success();
+	}
+
+	/**
+	 * 根据id查询员工信息
+	 * @param empId
+	 * @return
+	 */
+	@RequestMapping(value = "/getConById/{conId}", method = RequestMethod.GET)
+	@ResponseBody
+	public JsonMsg getConById(@PathVariable("conId") Integer conId){
+		ContractsEntity contractsEntity = contractsService.getConById(conId);
+		if (contractsEntity != null){
+			return JsonMsg.success().addInfo("contractsEntity", contractsEntity);
+		}else {
+			return JsonMsg.fail();
+		}
+
+	}
+
+	/**
+	 * 新增部门
+	 * @param department
+	 * @return
+	 */
+	@RequestMapping(value = "/addCon", method = RequestMethod.PUT)
+	@ResponseBody
+	public JsonMsg addCon(ContractsEntity contractsEntity){
+		int res = contractsService.addCon(contractsEntity);
+		if (res != 1){
+			return JsonMsg.fail().addInfo("add_dept_error", "添加异常！");
+		}
+		return JsonMsg.success();
+	}
 
 
 }

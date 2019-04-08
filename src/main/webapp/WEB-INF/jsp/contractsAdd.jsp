@@ -3,6 +3,17 @@
 <html>
 <head>
 	<title>部门新增页面</title>
+
+	<style type="text/css">
+
+		.inputStyle{
+			width: 450px;
+			border: 1px solid gray;
+			border-radius: 18px;
+			height: 30px;
+			outline: none;
+		}
+	</style>
 </head>
 <body>
 <div class="modal fade con-add-modal" tabindex="-1" role="dialog" aria-labelledby="con-add-modal">
@@ -10,22 +21,68 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title">部门新增</h4>
+				<h4 class="modal-title">合同新增</h4>
 			</div>
 			<div class="modal-body">
 				<form class="form-horizontal add_con_form">
 					<div class="form-group">
-						<label for="add_conCode" class="col-sm-2 control-label">部门名称</label>
+						<label for="add_conCode" class="col-sm-2 control-label">合同编号</label>
 						<div class="col-sm-8">
 							<input type="text" name="contractsCode" class="form-control" id="add_conCode" placeholder="人事部">
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="add_conTitle" class="col-sm-2 control-label">部门老大</label>
+						<label for="add_conTitle" class="col-sm-2 control-label">合同标题</label>
 						<div class="col-sm-8">
 							<input type="text" name="contractsTitle" class="form-control" id="add_conTitle" placeholder="XXX">
 						</div>
 					</div>
+
+
+
+
+
+
+					<div class="form-group">
+						<label style="font-weight: bold;font-size: large" for="add_department" class="col-sm-2 control-label">省</label>
+						<div class="col-sm-8">
+							<div >
+								<select   class="inputStyle" class="form-control" name="departmentId" id="add_department">
+									<%-- <option value="1">CEO</option>--%>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label style="font-weight: bold;font-size: large" for="add_department" class="col-sm-2 control-label">市</label>
+						<div class="col-sm-8">
+							<div >
+								<select  class="inputStyle" class="form-control" name="departmentId" id="add_department">
+									<%-- <option value="1">CEO</option>--%>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label style="font-weight: bold;font-size: large" for="add_department" class="col-sm-2 control-label">区</label>
+						<div class="col-sm-8">
+							<div >
+								<select  class="inputStyle" class="form-control" name="departmentId" id="add_department">
+									<%-- <option value="1">CEO</option>--%>
+								</select>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+
+
+
 				</form>
 			</div>
 			<div class="modal-footer">
@@ -43,6 +100,7 @@
     //2 输入新增部门信息，点击保存按钮，发送AJAX请求到后台进行保存；
     //3 保存成功跳转最后一页
     $(".con_add_btn").click(function () {
+
         $('.con-add-modal').modal({
             backdrop:static,
             keyboard:true
@@ -51,8 +109,8 @@
     });
 
     $(".con_save_btn").click(function () {
-        var conName = $("#add_conName").val();
-        var conLeader = $("#add_conLeader").val();
+        var conCode = $("#add_conCode").val();
+        var conTitle = $("#add_conTitle").val();
         //验证省略...
         $.ajax({
             url:"/hrms/contracts/addCon",

@@ -2,6 +2,7 @@ package com.hrms.service;
 
 import com.hrms.bean.ContractsEntity;
 import com.hrms.bean.Department;
+import com.hrms.bean.RightsMan;
 import com.hrms.mapper.ContractsMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,6 +25,18 @@ public class ContractsService {
 
 	public int getConCount(){
 		return contractsMapper.countCon();
+	}
+
+	public int updateConById(Integer conId, ContractsEntity contractsEntity){
+		return contractsMapper.updateConById(conId, contractsEntity);
+	}
+
+	public ContractsEntity getConById(Integer conId){
+		return contractsMapper.selectOneById(conId);
+	}
+
+	public int addCon(ContractsEntity contractsEntity){
+		return contractsMapper.insertCon(contractsEntity);
 	}
 
 

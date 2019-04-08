@@ -9,18 +9,18 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title">部门更改</h4>
+				<h4 class="modal-title">合同更改</h4>
 			</div>
 			<div class="modal-body">
 				<form class="form-horizontal update_con_form">
 					<div class="form-group">
-						<label for="update_conCode" class="col-sm-2 control-label">部门名称</label>
+						<label for="update_conCode" class="col-sm-2 control-label">合同编号</label>
 						<div class="col-sm-8">
 							<input type="text" name="contractsCode" class="form-control" id="update_conCode">
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="update_conTitle" class="col-sm-2 control-label">部门老大</label>
+						<label for="update_conTitle" class="col-sm-2 control-label">合同标题</label>
 						<div class="col-sm-8">
 							<input type="text" name="contractsTitle" class="form-control" id="update_conTitle">
 						</div>
@@ -47,17 +47,17 @@
 
     $(".con_edit_btn").click(function () {
         edit_conId = $(this).parent().parent().find("td:eq(0)").text();
-        alert("id"+edit_conId);
+
         //查询对应conId的部门信息
         $.ajax({
-            url:"/hrms/con/getConById/"+edit_conId,
+            url:"/hrms/contracts/getConById/"+edit_conId,
             type:"GET",
             success:function (result) {
                 if (result.code == 100){
-                    var conData = result.extendInfo.department;
+                    var conData = result.extendInfo.contractsEntity;
                     //回显
-                    $("#update_conName").val(conData.conName);
-                    $("#update_conLeader").val(conData.conLeader);
+                    $("#update_conCode").val(conData.contractsCode);
+                    $("#update_conTitle").val(conData.contractsTitle);
                 }else {
                     alert(result.extendInfo.get_con_error);
                 }
@@ -67,7 +67,7 @@
 
     $(".con_update_btn").click(function () {
         $.ajax({
-            url:"/hrms/con/updateCon/"+edit_conId,
+            url:"/hrms/contracts/updateCon/"+edit_conId,
             type:"PUT",
             data:$(".update_con_form").serialize(),
             success:function (result) {
