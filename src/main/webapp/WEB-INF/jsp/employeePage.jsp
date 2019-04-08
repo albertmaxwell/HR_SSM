@@ -5,10 +5,12 @@
 <head>
     <title>员工管理页面</title>
 
+<%--
 
     <script src="<%=request.getContextPath()%>/plug-in/jquery/jquery-1.9.1.js"></script>
 
     <script src="<%=request.getContextPath()%>/plug-in/layer/layer/layer.js"></script>
+--%>
 
 </head>
 <body>

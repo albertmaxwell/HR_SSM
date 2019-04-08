@@ -1,5 +1,6 @@
 package com.hrms.mapper;
 
+import com.hrms.bean.Department;
 import com.hrms.bean.Employee;
 import com.hrms.bean.RightsMan;
 import org.apache.ibatis.annotations.*;
@@ -14,7 +15,7 @@ import java.util.List;
 public interface RightsManMapper {
 
 	String TABLE_NAME = "tbl_rights";
-	String INSERT_FIELDS = "rights_person_name, rights_account, rights_password";
+	String INSERT_FIELDS = "rights_name, rights_account, rights_password";
 	String SELECT_FIELDS = "rights_id as 'rightsId', " +
 			"rights_name as 'rightsName', " +
 			"rights_account as 'rightsAccount'"+
@@ -50,4 +51,11 @@ public interface RightsManMapper {
 	 */
 	@Delete({"DELETE FROM", TABLE_NAME, "WHERE rights_id=#{rightsId}"})
 	int deleteRightsById(@Param("rightsId") Integer rightsId);
+
+	/**
+	 * =================================新增============================================
+	 */
+	@Insert({"INSERT INTO",TABLE_NAME, "(", INSERT_FIELDS ,") " +
+			"VALUES(#{rightsMan.rightsName}, #{rightsMan.rightsAccounts},#{rightsMan.rightsPassword})"})
+	int insertDept(@Param("rightsMan") RightsMan rightsMan);
 }

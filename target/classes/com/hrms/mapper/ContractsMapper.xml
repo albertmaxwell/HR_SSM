@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hrms.mapper.ContractsMapper">
+
+
+    <sql id="table_name">
+        tbl_contracts
+    </sql>
+
+    <sql id="select_fields">
+        contracts_id, contracts_code, contracts_title
+    </sql>
+
+    <resultMap id="rightsResult" type="com.hrms.bean.ContractsEntity">
+        <id column="contracts_id" property="contractsId"></id>
+        <result column="contracts_code" property="contractsCode"></result>
+        <result column="contracts_title" property="contractsTitle"></result>
+    </resultMap>
+    <select id="selectConByLimitAndOffset" resultMap="rightsResult">
+        SELECT
+        contracts_id as 'contractsId', contracts_code as 'contractsCode', contracts_title as 'contractsTitle'
+        FROM
+        <include refid="table_name"></include>
+        LIMIT  #{offset},  #{limit}
+    </select>
+
+
+</mapper>

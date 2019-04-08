@@ -13,12 +13,12 @@
 				<h4 class="modal-title">用户新增</h4>
 			</div>
 			<div class="modal-body">
-				<form class="form-horizontal add_rithts_form">
+				<form class="form-horizontal add_rights_form">
 
 					<div class="form-group">
 						<label for="add_rightsName" class="col-sm-2 control-label">用户姓名</label>
 						<div class="col-sm-8">
-							<input type="text" name="rithtsName" class="form-control" id="add_rightsName" placeholder="人事部">
+							<input type="text" name="rightsName" class="form-control" id="add_rightsName" placeholder="人事部">
 						</div>
 					</div>
 
@@ -40,7 +40,7 @@
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-				<button type="button" class="btn btn-primary rithts_save_btn">保存</button>
+				<button type="button" class="btn btn-primary rights_save_btn">保存</button>
 			</div>
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
@@ -60,30 +60,31 @@
 
     });
 
-    $(".rithts_save_btn").click(function () {
-        var rithtsName = $("#add_rithtsName").val();
-        var rithtsLeader = $("#add_rithtsLeader").val();
+    $(".rights_save_btn").click(function () {
+        var rightsAccount = $("#add_rightsAccount").val();
+        var rightsPassword = $("#add_rightsPassword").val();
         //验证省略...
         $.ajax({
-            url:"/hrms/rithts/addrithts",
+            url:"/hrms/rights/addRights",
             type:"PUT",
-            data:$(".add_rithts_form").serialize(),
+            data:$(".add_rights_form").serialize(),
             success:function (result) {
                 if(result.code == 100){
-                    alert("新增成功");
+                    layer.alert("新增成功", {icon:5} );
+
                     $('.rights-add-modal').modal("hide");
                     $.ajax({
-                        url:"/hrms/rithts/getTotalPages",
+                        url:"/hrms/rights/getTotalPages",
                         type:"GET",
                         success:function (result) {
                             if (result.code == 100){
                                 var totalPage = result.extendInfo.totalPages;
-                                window.location.href="/hrms/rithts/getRighrMantList?pageNo="+totalPage;
+                                window.location.href="/hrms/rights/getRightsList?pageNo="+totalPage;
                             }
                         }
                     });
                 }else {
-                    alert(result.extendInfo.add_rithts_error);
+                    alert(result.extendInfo.add_rights_error);
                 }
             }
         });

@@ -1,6 +1,7 @@
 package com.hrms.controller;
 
 
+import com.hrms.bean.Department;
 import com.hrms.bean.Employee;
 import com.hrms.bean.RightsMan;
 import com.hrms.service.RightManService;
@@ -105,6 +106,21 @@ public class RightsManController {
 		}
 		if (res != 1){
 			return JsonMsg.fail().addInfo("del_dept_error", "删除异常");
+		}
+		return JsonMsg.success();
+	}
+
+	/**
+	 * 新增部门
+	 * @param department
+	 * @return
+	 */
+	@RequestMapping(value = "/addRights", method = RequestMethod.PUT)
+	@ResponseBody
+	public JsonMsg addRights(RightsMan rightsMan){
+		int res = rightManService.addRights(rightsMan);
+		if (res != 1){
+			return JsonMsg.fail().addInfo("add_dept_error", "添加异常！");
 		}
 		return JsonMsg.success();
 	}

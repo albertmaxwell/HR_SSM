@@ -1,5 +1,6 @@
 package com.hrms.test;
 
+import com.hrms.bean.Department;
 import com.hrms.bean.Employee;
 import com.hrms.bean.RightsMan;
 import com.hrms.mapper.RightsManMapper;
@@ -47,6 +48,13 @@ public class RightsManMapperTest {
 	@Test
 	public void deleteRightsTest(){
 		int res = rightsManMapper.deleteRightsById(1);
+		System.out.println(res);
+	}
+
+	@Test
+	public void insertRightsTest(){
+		RightsMan rightsMan = new RightsMan(1, "2", "2","2");
+		int res = rightsManMapper.insertRights(rightsMan);
 		System.out.println(res);
 	}
 

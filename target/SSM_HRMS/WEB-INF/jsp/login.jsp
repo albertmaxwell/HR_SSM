@@ -16,30 +16,36 @@
     <script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
     <script src="//cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
-    <style type="text/css">
-       .login{
-
-       }
 
 
-    </style>
+
+<style type="text/css">
+    .login {
+        background: url("login.jpg") center no-repeat;
+        background-repeat: no-repeat;
+        background-size:contain;
+    }
+</style>
+
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-md-4 col-md-offset-4" style="margin: 180px 0px 0px 380px">
-            <div style="height: 300px;width: 400px" class="login-panel panel panel-default" >
-                <div class="panel-heading">
+<div <%--class="container"--%>>
+
+    <div style=" background: url('login.jpg')  no-repeat;   background-size:500px 200px;">
+
+        <div class="col-md-4 col-md-offset-4" style="margin: 180px 0px 0px 380px;">
+            <div <%--style="height: 300px;width: 400px;"--%> class="login-panel panel panel-default" >
+                <div  class="panel-heading">
                     <h3 class="panel-title" style="text-align: center;font-weight: bolder;font-size: large">登录</h3>
                 </div>
                 <div style="background-color: #0e90d2" class="panel-body">
                     <form role="form" action="#" method="post" id="login_form">
                         <fieldset>
                             <div  class="form-group">
-                                <input class="form-control" placeholder="用户名:admin" name="username" autofocus>
+                                <input class="form-control" placeholder="用户名:1" name="username" autofocus>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" placeholder="密码:不咋地" name="password" type="password" value="">
+                                <input class="form-control" placeholder="密码:1" name="password" type="password" value="">
                             </div>
                             <!-- Change this to a button or input when using this as a form -->
                             <a href="javascript:void(0)" class="btn btn-lg btn-success btn-block" id='login_btn'>登录</a>

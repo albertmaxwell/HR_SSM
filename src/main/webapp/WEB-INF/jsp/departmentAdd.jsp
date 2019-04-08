@@ -60,7 +60,7 @@
             data:$(".add_dept_form").serialize(),
             success:function (result) {
                 if(result.code == 100){
-                    alert("新增成功");
+                    layer.alert("新增成功", {icon:5} );
                     $('.dept-add-modal').modal("hide");
                     $.ajax({
                         url:"/hrms/dept/getTotalPages",

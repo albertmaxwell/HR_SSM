@@ -117,6 +117,8 @@
             data:"empName="+empName,
             success:function (result) {
                 if (result.code == 100){
+                    layer.alert("新增成功", {icon:5} );
+
                     $("#add_inputName").parent().parent().removeClass("has-error");
                     $("#add_inputName").parent().parent().addClass("has-success");
                     $("#helpBlock_add_inputName").text("用户名可用！");

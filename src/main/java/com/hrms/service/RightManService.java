@@ -41,4 +41,8 @@ public class RightManService {
 		return rightsManMapper.deleteRightsById(rightsId);
 	}
 
+	public int addRights(RightsMan rightsMan){
+		return rightsManMapper.insertRights(rightsMan);
+	}
+
 }

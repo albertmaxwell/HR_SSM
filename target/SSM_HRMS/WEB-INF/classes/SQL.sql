@@ -18,3 +18,13 @@ CREATE TABLE `tbl_dept` (
 `dept_leader` VARCHAR ( 255 ) NOT NULL DEFAULT '',
 PRIMARY KEY ( `dept_id` )
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8;
+
+
+DROP TABLE
+IF EXISTS `tbl_contracts`;
+CREATE TABLE `tbl_contracts` (
+`contracts_id` INT ( 11 ) UNSIGNED NOT NULL auto_increment,
+`contracts_code` VARCHAR ( 255 ) NOT NULL DEFAULT '',
+`contracts_title` VARCHAR ( 255 ) NOT NULL DEFAULT '',
+PRIMARY KEY ( `contracts_id` )
+) ENGINE = InnoDB DEFAULT CHARSET = utf8;
