@@ -51,6 +51,10 @@ public interface DepartmentMapper {
 
     List<Department> selectDeptsByLimitAndOffset(@Param("offset") Integer offset,
                                                  @Param("limit") Integer limit);
+    @Select({"SELECT", SELECT_FIELDS, "FROM", TABLE_NAME ,"WHERE dept_id=#{checkValue}"})
+    List<Department> selectDeptsListBycheck(@Param("checkValue") String checkValue
+    );
+
 
     @Select({"SELECT COUNT(dept_id) FROM", TABLE_NAME,
             "WHERE deptLeader = #{deptLeader} OR deptName = #{deptName}"})

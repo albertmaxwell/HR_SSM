@@ -1,7 +1,10 @@
 package com.hrms.controller;
 
 import com.hrms.bean.Department;
+import com.hrms.bean.RegionEntity;
+import com.hrms.mapper.PCAMapper;
 import com.hrms.service.DepartmentService;
+import com.hrms.service.RegionService;
 import com.hrms.util.JsonMsg;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,7 +13,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author GenshenWang.nomico
@@ -24,6 +29,11 @@ public class DepartmentController {
 
     @Autowired
     DepartmentService departmentService;
+    @Autowired
+    RegionService regionService;
+    @Autowired
+    PCAMapper pcaMapper;
+
 
     /**
      * 删除
@@ -138,6 +148,23 @@ public class DepartmentController {
         return mv;
     }
 
+
+    /**
+     * 分页查询：返回指定页数对应的数据
+     * @param pageNo
+     * @return
+     */
+    @RequestMapping(value = "/getCheckList", method = RequestMethod.GET)
+    public ModelAndView getCheckList(@RequestParam(value = "checkValue", defaultValue = "1") String checkValue){
+        ModelAndView mv = new ModelAndView("departmentPage");
+
+
+        List<Department> departments = departmentService.getCheckList(checkValue);
+
+        mv.addObject("departments", departments);
+        return mv;
+    }
+
     /**
      * 查询所有部门名称
      * @return
@@ -150,6 +177,25 @@ public class DepartmentController {
             return JsonMsg.success().addInfo("departmentList", departmentList);
         }
         return JsonMsg.fail();
+    }
+
+    /**
+     * 下拉联动数据---省市区
+     */
+    @RequestMapping(value = "/getPCAList/{pid}", method = RequestMethod.GET)
+    @ResponseBody
+    public JsonMsg getPCAList(@PathVariable("pid") String pid) throws Exception {
+        logger.info("----省市区联动-----");
+        RegionEntity regionEntity = null;
+        if (pid !=null&&!pid.isEmpty()){
+            List<RegionEntity> list = regionService.getRegName(pid);
+
+            if (list != null){
+                return JsonMsg.success().addInfo("list",list);
+            }
+        }
+        return JsonMsg.fail();
+
     }
 
 

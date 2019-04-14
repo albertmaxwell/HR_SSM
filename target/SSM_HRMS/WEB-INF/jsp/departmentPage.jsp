@@ -13,13 +13,13 @@
 
 
     <!-- 中间部分（左侧栏+表格内容） -->
-    <div class="hrms_dept_body">
+    <div class="hrms_dept_body" style="position:relative; top:-15px;">
         <!-- 左侧栏 -->
         <%@ include file="./commom/leftsidebar.jsp"%>
 
         <!-- 部门表格内容 -->
-        <div class="dept_info col-sm-10">
-            <div class="panel panel-success">
+        <div  class="dept_info col-sm-10">
+            <div style="width: 1270px" class="panel panel-success">
                 <!-- 路径导航 -->
                 <div class="panel-heading">
                     <ol class="breadcrumb">
@@ -27,7 +27,16 @@
                         <li class="active">部门信息</li>
                     </ol>
                 </div>
-                <!-- Table -->
+                <div class="form-group">
+                   <%-- <button onclick="checkData" style="font-weight: bold;font-size: large;width: 100px;background-color: #1b9af7;outline: none;border: none;color: #ffffff" for="add_inputName" class="col-sm-2 control-label">查询</button>--%>
+                       <button  type="button" class="btn btn-primary con_update_btn">查询</button>
+                      <a style="font-size: large;font-weight: bolder" href="/hrms/dept/getDeptList?pageNo=1"><button class="btn btn-primary ">重置</button></a>
+                    <div class="col-sm-8" style="width: 200px">
+                        <input  type="text" name="empName" class="form-control" id="add_checkName" placeholder="请输入要查询的字段">
+                        <span id="helpBlock_add_inputName" class="help-block"></span>
+                    </div>
+                </div>
+               <!-- Table -->
                 <table class="table table-bordered table-hover" id="dept_table">
                     <thead>
                         <th>部门编号</th>
@@ -41,7 +50,7 @@
                                 <td>${dept.deptId}</td>
                                 <td>${dept.deptName}</td>
                                 <td>${dept.deptLeader}</td>
-                                <td>
+                                <td style="width: 150px">
                                     <a href="#" role="button" class="btn btn-primary dept_edit_btn" data-toggle="modal" data-target=".dept-update-modal">编辑</a>
                                     <a href="#" role="button" class="btn btn-danger dept_delete_btn">删除</a>
                                 </td>
@@ -150,6 +159,14 @@
             });
         }
     });
+
+    $(".con_update_btn").click(function () {
+
+        var  checkValue= document.getElementById("add_checkName").value;
+        window.location.href = "/hrms/dept/getCheckList?checkValue="+checkValue;
+
+    });
+
 </script>
 </body>
 </html>

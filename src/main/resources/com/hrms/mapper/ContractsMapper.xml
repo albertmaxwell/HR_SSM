@@ -16,10 +16,14 @@
         <id column="contracts_id" property="contractsId"></id>
         <result column="contracts_code" property="contractsCode"></result>
         <result column="contracts_title" property="contractsTitle"></result>
+        <result column="province_pid" property="provincePid"></result>
+        <result column="city_pid" property="cityPid"></result>
+        <result column="area_pid" property="areaPid"></result>
     </resultMap>
     <select id="selectConByLimitAndOffset" resultMap="rightsResult">
         SELECT
-        contracts_id as 'contractsId', contracts_code as 'contractsCode', contracts_title as 'contractsTitle'
+        contracts_id as 'contractsId', contracts_code as 'contractsCode', contracts_title as 'contractsTitle',
+        province_pid as 'provincePid', city_pid as 'cityPid', area_pid as 'areaPid'
         FROM
         <include refid="table_name"></include>
         LIMIT  #{offset},  #{limit}

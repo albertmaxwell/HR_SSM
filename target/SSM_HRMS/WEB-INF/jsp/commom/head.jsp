@@ -19,7 +19,7 @@
 </head>
 
 <body>
-<div style="background-color: #384766;height: 72px" class="hrms_brand_nav">
+<div style="background-color: #26344e;height: 72px" class="hrms_brand_nav">
     <nav   class="navbar navbar-inverse navbar-static-top">
         <div style="background-color: #26344b;" class="container-fluid">
             <div  class="navbar-header">

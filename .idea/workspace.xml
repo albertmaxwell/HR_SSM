@@ -7,32 +7,106 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01102ad5-f62e-4826-9e2c-97995ad463cd" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/Vo/CockpitVo.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/Vo/DistributeVo.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/Vo/HistogramVo.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/Vo/MapVo.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/Vo/PieChartsVo.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/bean/RegionEntity.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/common/PCAController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/controller/visualDataController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/mapper/PCAMapper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/service/ChartsDataService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/service/CountService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/service/RegionService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/service/serviceimpl/ChartsDataServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/service/serviceimpl/CountServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/test/CommonMapperTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/test/DataVisualControllerTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/util/DateUtil.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/util/JsonMessage.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/visualDataPage.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/echart/echarts.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/echart/echarts.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/echart/jquery.tmpl.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/echart/map/china.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/echart/map/chongqing.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/echart/map/chongqing.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/echart/map1/bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/echart/map1/china.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/echart/map1/echarts.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/echart/map1/jquery.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/echart/theme/bgdiy.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/echart/theme/dark.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/echart/theme/infographic.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/echart/theme/macarons.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/echart/theme/roma.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/echart/theme/shine.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/echart/theme/vintage.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/echart/theme/waldendiy.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/echart/wx/qrcodeReport.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/echart/wx/wxreport.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/javascript/charts.public.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/laydate/laydate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/laydate/theme/default/font/iconfont.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/laydate/theme/default/font/iconfont.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/laydate/theme/default/font/iconfont.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/laydate/theme/default/font/iconfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/plug-in/laydate/theme/default/laydate.css" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/bean/ContractsEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/bean/ContractsEntity.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/controller/ContractsController.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/controller/ContractsController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/controller/DepartmentController.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/controller/DepartmentController.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/mapper/ContractsMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/mapper/ContractsMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/service/ContractsService.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/service/ContractsService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/mapper/DepartmentMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/mapper/DepartmentMapper.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/service/DepartmentService.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/service/DepartmentService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/service/RightManService.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/service/RightManService.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/test/ContractsMapperTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/test/ContractsMapperTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hrms/test/RightsManMapperTest.java" afterPath="$PROJECT_DIR$/src/main/java/com/hrms/test/RightsManMapperTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/MyBatis.xml" afterPath="$PROJECT_DIR$/src/main/resources/MyBatis.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/hrms/mapper/ContractsMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/hrms/mapper/ContractsMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/springmvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/springmvc.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/commom/head.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/commom/head.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/commom/leftsidebar.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/commom/leftsidebar.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/contractsAdd.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/contractsAdd.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/contractsPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/contractsPage.jsp" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/contractsUpdate.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/contractsUpdate.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/departmentPage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/departmentPage.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/employeePage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/employeePage.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/rightsManagePage.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/rightsManagePage.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_HRMS.war" afterPath="$PROJECT_DIR$/target/SSM_HRMS.war" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/MyBatis.xml" afterPath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/MyBatis.xml" />
       <change beforePath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/com/hrms/bean/ContractsEntity.class" afterPath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/com/hrms/bean/ContractsEntity.class" />
       <change beforePath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/com/hrms/controller/ContractsController.class" afterPath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/com/hrms/controller/ContractsController.class" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/com/hrms/controller/DepartmentController.class" afterPath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/com/hrms/controller/DepartmentController.class" />
       <change beforePath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/com/hrms/mapper/ContractsMapper.class" afterPath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/com/hrms/mapper/ContractsMapper.class" />
       <change beforePath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/com/hrms/mapper/ContractsMapper.xml" afterPath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/com/hrms/mapper/ContractsMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/com/hrms/service/ContractsService.class" afterPath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/com/hrms/service/ContractsService.class" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/com/hrms/mapper/DepartmentMapper.class" afterPath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/com/hrms/mapper/DepartmentMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/com/hrms/service/DepartmentService.class" afterPath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/com/hrms/service/DepartmentService.class" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/com/hrms/service/RightManService.class" afterPath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/com/hrms/service/RightManService.class" />
       <change beforePath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/com/hrms/test/ContractsMapperTest.class" afterPath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/com/hrms/test/ContractsMapperTest.class" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/springmvc.xml" afterPath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/classes/springmvc.xml" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/jsp/commom/head.jsp" afterPath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/jsp/commom/head.jsp" />
       <change beforePath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/jsp/commom/leftsidebar.jsp" afterPath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/jsp/commom/leftsidebar.jsp" />
       <change beforePath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/jsp/contractsAdd.jsp" afterPath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/jsp/contractsAdd.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/jsp/contractsPage.jsp" afterPath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/jsp/contractsPage.jsp" />
       <change beforePath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/jsp/contractsUpdate.jsp" afterPath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/jsp/contractsUpdate.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/jsp/departmentPage.jsp" afterPath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/jsp/departmentPage.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/jsp/employeePage.jsp" afterPath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/jsp/employeePage.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/jsp/rightsManagePage.jsp" afterPath="$PROJECT_DIR$/target/SSM_HRMS/WEB-INF/jsp/rightsManagePage.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MyBatis.xml" afterPath="$PROJECT_DIR$/target/classes/MyBatis.xml" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/bean/ContractsEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/hrms/bean/ContractsEntity.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/controller/ContractsController.class" afterPath="$PROJECT_DIR$/target/classes/com/hrms/controller/ContractsController.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/controller/DepartmentController.class" afterPath="$PROJECT_DIR$/target/classes/com/hrms/controller/DepartmentController.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/mapper/ContractsMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/hrms/mapper/ContractsMapper.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/mapper/ContractsMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/hrms/mapper/ContractsMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/service/ContractsService.class" afterPath="$PROJECT_DIR$/target/classes/com/hrms/service/ContractsService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/mapper/DepartmentMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/hrms/mapper/DepartmentMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/service/DepartmentService.class" afterPath="$PROJECT_DIR$/target/classes/com/hrms/service/DepartmentService.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/service/RightManService.class" afterPath="$PROJECT_DIR$/target/classes/com/hrms/service/RightManService.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/hrms/test/ContractsMapperTest.class" afterPath="$PROJECT_DIR$/target/classes/com/hrms/test/ContractsMapperTest.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springmvc.xml" afterPath="$PROJECT_DIR$/target/classes/springmvc.xml" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,11 +124,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ContractsMapperTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/test/ContractsMapperTest.java">
+      <file leaf-file-name="ChartsDataService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/service/ChartsDataService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="44" column="36" lean-forward="true" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
+            <state relative-caret-position="251">
+              <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="visualDataPage.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/visualDataPage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="62">
+              <caret line="612" column="19" lean-forward="true" selection-start-line="612" selection-start-column="19" selection-end-line="612" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="visualDataController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/controller/visualDataController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="37" column="16" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsonMessage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/util/JsonMessage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CountService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/service/CountService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DepartmentController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/controller/DepartmentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="141" column="26" lean-forward="true" selection-start-line="141" selection-start-column="26" selection-end-line="141" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModelAndView.class" pinned="false" current-in-tab="false">
+        <entry file="jar://E:/Aenvironment/repo/m2/org/springframework/spring-webmvc/4.2.9.RELEASE/spring-webmvc-4.2.9.RELEASE.jar!/org/springframework/web/servlet/ModelAndView.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="96" column="5" lean-forward="true" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CountServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/service/serviceimpl/CountServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="46" column="21" lean-forward="false" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,101 +206,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContractsController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/controller/ContractsController.java">
+      <file leaf-file-name="CockpitVo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/Vo/CockpitVo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1190">
-              <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+            <state relative-caret-position="470">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding>
+                <element signature="e#821#822#0" expanded="true" />
+                <element signature="e#844#845#0" expanded="true" />
+                <element signature="e#976#977#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChartsDataServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/service/serviceimpl/ChartsDataServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1555216101551" expanded="true" signature="839:1510" ph="SELECT SUM(I... *" />
+                <marker date="1555216101551" expanded="true" signature="970:1420" ph="SELECT * FRO... rvaud02" />
+                <marker date="1555216101551" expanded="true" signature="986:1290" ph="SELECT a.rva... " />
+                <marker date="1555216101551" expanded="true" signature="2139:2753" ph="SELECT SUM(I... *" />
+                <marker date="1555216101551" expanded="true" signature="2213:2663" ph="SELECT * FRO... rvaud02" />
+                <marker date="1555216101551" expanded="true" signature="2229:2533" ph="SELECT a.rva... " />
+                <marker date="1555216101551" expanded="true" signature="3341:3973" ph="SELECT SUM(I... *" />
+                <marker date="1555216101551" expanded="true" signature="3424:3883" ph="SELECT * FRO... rvaud02" />
+                <marker date="1555216101551" expanded="true" signature="3440:3753" ph="SELECT a.rva... " />
+                <marker date="1555216101551" expanded="true" signature="10634:10864" ph="select b.rvb... rva_file" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContractsService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/service/ContractsService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="38" column="35" lean-forward="true" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
-              <folding>
-                <element signature="e#848#849#0" expanded="true" />
-                <element signature="e#898#899#0" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
-                <element signature="e#1008#1009#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContractsMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/mapper/ContractsMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contractsAdd.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/contractsAdd.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="60" column="20" lean-forward="false" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
-              <folding>
-                <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RightsManMapperTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/test/RightsManMapperTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="56" column="46" lean-forward="false" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="employeeAdd.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/employeeAdd.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="26" column="12" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="26" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DepartmentMapperTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/test/DepartmentMapperTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2310">
-              <caret line="76" column="5" lean-forward="true" selection-start-line="69" selection-start-column="3" selection-end-line="76" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeMapperTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/test/EmployeeMapperTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RightsManMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/mapper/RightsManMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="59" column="60" lean-forward="true" selection-start-line="54" selection-start-column="4" selection-end-line="59" selection-end-column="60" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -166,43 +247,43 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rights_manage</find>
-      <find>部门新增</find>
-      <find>rights_add</find>
-      <find>rithts_add_btn</find>
-      <find>rights_person_name</find>
-      <find>rithts</find>
-      <find>keyboard</find>
-      <find>STSTIC</find>
-      <find>static</find>
-      <find>add_inputName</find>
-      <find>admin</find>
-      <find>now</find>
-      <find>container</find>
-      <find>img/</find>
-      <find>row</find>
-      <find>rights-add-modal</find>
-      <find>dep</find>
-      <find>DEP</find>
-      <find>DE</find>
-      <find>alert</find>
-      <find>conname</find>
-      <find>save</find>
-      <find>dept_add_btn</find>
-      <find>con</find>
-      <find>add_conCode</find>
-      <find>backdrop</find>
-      <find>dept_save_btn</find>
-      <find>dept-add-modal</find>
-      <find>con-add-modal</find>
-      <find>de</find>
+      <find>连</find>
+      <find>操作</find>
+      <find>con-update-modal</find>
+      <find>con_update_btn</find>
+      <find>add_city</find>
+      <find>张三</find>
+      <find>con_data_btn</find>
+      <find>con_edit_btn</find>
+      <find>部门管理</find>
+      <find>dept_info</find>
+      <find>cityMap</find>
+      <find>首页</find>
+      <find>ech</find>
+      <find>layer</find>
+      <find>城市园区</find>
+      <find>emp_visualData_btn</find>
+      <find>全国</find>
+      <find>ajax</find>
+      <find>quer</find>
+      <find>JSONArray</find>
+      <find>AjaxJson</find>
+      <find>chartsDataServiceImpl</find>
+      <find>spring</find>
+      <find>basePackage</find>
+      <find>type = 's', t.numbe</find>
+      <find>cockpit</find>
+      <find>q</find>
+      <find>getDataVisual</find>
+      <find>查询</find>
+      <find>addInfo</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -235,57 +316,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/static/html/hrms_foot.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/html/hrms_leftsidebar.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/html/hrms_employee.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/html/hrms_head.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/html/hrms_department.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/layer.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/html/hrms_main.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/commom/head.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/rightsManagement.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/log4j/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrms/controller/DepartmentController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/MyBatis.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrms/test/DepartmentMapperTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/hrms/mapper/DepartmentMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/hrms/mapper/rightsMan.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrms/bean/RightsMan.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/rightsManagePage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personRightsUpdate.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrms/service/LoginService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrms/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/hrms/mapper/LoginMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/hrms/mapper/RightsManMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrms/mapper/LoginMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrms/test/LoginMapperTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrms/service/RightManService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrms/controller/RightsManController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrms/mapper/RightsManMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/employeePage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personRightsAdd.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/departmentAdd.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/employeeAdd.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/SQL.sql" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/contractsPage.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrms/bean/ContractsEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/hrms/mapper/ContractsMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/contractsUpdate.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/commom/leftsidebar.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrms/controller/ContractsController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrms/service/ContractsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hrms/test/RightsManMapperTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hrms/mapper/ContractsMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/employeeAdd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/common/PCAController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/test/CommonMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/mapper/PCAMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/bean/RegionEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/bean/ContractsEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/contractsUpdate.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/hrms/mapper/ContractsMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/hrms/test/ContractsMapperTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/mapper/ContractsMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/employeePage.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/contractsAdd.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/service/DepartmentService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/mapper/DepartmentMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/departmentPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/rightsManagePage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/commom/head.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/contractsPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/visualData.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/controller/ContractsController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/commom/leftsidebar.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/plug-in/javascript.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/Vo/PieChartsVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/Vo/HistogramVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/Vo/MapVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/Vo/DistributeVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/serviceimpl/CountServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/util/JSONArray.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/util/JSONObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/util/JsonMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/util/DateUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/serviceimpl/ChartsDataServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/service/ContractsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/service/CountService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/service/RightManService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/service/RegionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/service/ChartsDataService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/Vo/CockpitVo.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/springmvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/MyBatis.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/test/DataVisualControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/service/serviceimpl/ChartsDataServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/service/serviceimpl/CountServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/visualDataPage.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/controller/DepartmentController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hrms/controller/visualDataController.java" />
       </list>
     </option>
   </component>
@@ -338,9 +419,85 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
+    <option name="x" value="-8" />
     <option name="width" value="976" />
     <option name="height" value="1038" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CodeSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>Encapsulation issuesJava</id>
+          </State>
+          <State>
+            <id>Inheritance issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>SetupSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring AOPSpring</id>
+          </State>
+          <State>
+            <id>Spring BatchSpring</id>
+          </State>
+          <State>
+            <id>Spring BootSpring</id>
+          </State>
+          <State>
+            <id>Spring CloudSpring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spring DataSpring</id>
+          </State>
+          <State>
+            <id>Spring IntegrationSpring</id>
+          </State>
+          <State>
+            <id>Spring MVCSpring</id>
+          </State>
+          <State>
+            <id>Spring OSGiSpring</id>
+          </State>
+          <State>
+            <id>Spring SecuritySpring</id>
+          </State>
+          <State>
+            <id>Spring Web FlowSpring</id>
+          </State>
+          <State>
+            <id>Spring Web ServicesSpring</id>
+          </State>
+          <State>
+            <id>Spring WebSocketSpring</id>
+          </State>
+          <State>
+            <id>XMLSpring CoreSpring</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpringJavaInjectionPointsAutowiringInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -357,10 +514,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -408,7 +565,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SSM_HRMS-master" type="b2602c69:ProjectViewProjectNode" />
@@ -416,7 +573,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="serviceimpl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SSM_HRMS-master" type="b2602c69:ProjectViewProjectNode" />
@@ -432,7 +589,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="Vo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SSM_HRMS-master" type="b2602c69:ProjectViewProjectNode" />
@@ -446,8 +603,7 @@
               <item name="SSM_HRMS-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SSM_HRMS-master" type="b2602c69:ProjectViewProjectNode" />
@@ -455,6 +611,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="plug-in" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM_HRMS-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM_HRMS-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="plug-in" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM_HRMS-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM_HRMS-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="plug-in" type="462c0819:PsiDirectoryNode" />
+              <item name="jquery" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SSM_HRMS-master" type="b2602c69:ProjectViewProjectNode" />
@@ -463,15 +638,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SSM_HRMS-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SSM_HRMS-master" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SSM_HRMS-master" type="b2602c69:ProjectViewProjectNode" />
@@ -509,19 +675,19 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../jNEWSSM" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="H:\Soft\nodejs\node.exe" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.rmicompiler" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GITHUB\Maxwell\SSM_HRMS-master\SSM_HRMS-master\src\main\webapp\plug-in\javascript" />
+      <recent name="E:\GITHUB\Maxwell\SSM_HRMS-master\SSM_HRMS-master\src\main\webapp\plug-in" />
       <recent name="E:\GITHUB\Maxwell\SSM_HRMS-master\SSM_HRMS-master\src\main\webapp\WEB-INF\jsp" />
       <recent name="E:\GITHUB\Maxwell\SSM_HRMS-master\SSM_HRMS-master\src\main\webapp\static\img" />
       <recent name="E:\GITHUB\Maxwell\SSM_HRMS-master\SSM_HRMS-master\src\main\webapp\WEB-INF" />
-      <recent name="E:\GITHUB\Maxwell\SSM_HRMS-master\SSM_HRMS-master\src\main\webapp\WEB-INF\log4j" />
-      <recent name="E:\GITHUB\Maxwell\SSM_HRMS-master\SSM_HRMS-master\src\main\webapp\WEB-INF\jsp\commom" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -566,6 +732,31 @@
       <setting name="launchBrowserUrl" value="" />
       <setting name="depsClasspath" value="false" />
     </configuration>
+    <configuration name="CommonMapperTest.citySelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hrms.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="SSM_HRMS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.hrms.test" />
+      <option name="MAIN_CLASS_NAME" value="com.hrms.test.CommonMapperTest" />
+      <option name="METHOD_NAME" value="citySelect" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="ContractsMapperTest.insertCONTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -579,31 +770,6 @@
       <option name="PACKAGE_NAME" value="com.hrms.test" />
       <option name="MAIN_CLASS_NAME" value="com.hrms.test.ContractsMapperTest" />
       <option name="METHOD_NAME" value="insertCONTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="ContractsMapperTest.selectConByLimitAndOffsetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.hrms.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="SSM_HRMS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.hrms.test" />
-      <option name="MAIN_CLASS_NAME" value="com.hrms.test.ContractsMapperTest" />
-      <option name="METHOD_NAME" value="selectConByLimitAndOffsetTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -641,7 +807,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ContractsMapperTest.updateConTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DataVisualControllerTest.cockpit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.hrms.test.*" />
@@ -652,8 +818,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.hrms.test" />
-      <option name="MAIN_CLASS_NAME" value="com.hrms.test.ContractsMapperTest" />
-      <option name="METHOD_NAME" value="updateConTest" />
+      <option name="MAIN_CLASS_NAME" value="com.hrms.test.DataVisualControllerTest" />
+      <option name="METHOD_NAME" value="cockpit" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -666,19 +832,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="RightsManMapperTest.selectRightsByLimitAndOffsetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.hrms.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="DepartmentMapperTest.selectDeptListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="SSM_HRMS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.hrms.test" />
-      <option name="MAIN_CLASS_NAME" value="com.hrms.test.RightsManMapperTest" />
-      <option name="METHOD_NAME" value="selectRightsByLimitAndOffsetTest" />
+      <option name="MAIN_CLASS_NAME" value="DepartmentMapperTest" />
+      <option name="METHOD_NAME" value="selectDeptListTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1788,19 +1949,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Jetty Server.SSM_HRMS" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.HRTOMCAT" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ContractsMapperTest.selectConByLimitAndOffsetTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.RightsManMapperTest.selectRightsByLimitAndOffsetTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ContractsMapperTest.updateConTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ContractsMapperTest.selectOneByIdTest" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.ContractsMapperTest.insertCONTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ContractsMapperTest.selectOneByIdTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ContractsMapperTest.insertCONTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CommonMapperTest.citySelect" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.DepartmentMapperTest.selectDeptListTest" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.DataVisualControllerTest.cockpit" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ContractsMapperTest.insertCONTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ContractsMapperTest.selectOneByIdTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ContractsMapperTest.updateConTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ContractsMapperTest.selectConByLimitAndOffsetTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.RightsManMapperTest.selectRightsByLimitAndOffsetTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DataVisualControllerTest.cockpit" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ContractsMapperTest.insertCONTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CommonMapperTest.citySelect" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.DepartmentMapperTest.selectDeptListTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ContractsMapperTest.selectOneByIdTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1823,44 +1984,52 @@
       <workItem from="1554442470064" duration="4079000" />
       <workItem from="1554450604573" duration="70770000" />
       <workItem from="1554609432948" duration="27942000" />
-      <workItem from="1554686123884" duration="7782000" />
+      <workItem from="1554686123884" duration="24143000" />
+      <workItem from="1554772294412" duration="13611000" />
+      <workItem from="1554806010515" duration="638000" />
+      <workItem from="1554958787234" duration="256000" />
+      <workItem from="1555045946216" duration="19142000" />
+      <workItem from="1555120651552" duration="6252000" />
+      <workItem from="1555126921279" duration="2238000" />
+      <workItem from="1555132072800" duration="7418000" />
+      <workItem from="1555205632777" duration="14874000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ContractsMapperTest_insertCONTest - 2019.04.08 at 13h 42m 24s.xml">
-      <configuration name="ContractsMapperTest.insertCONTest" configurationId="JUnit" />
+    <history-entry file="DataVisualControllerTest_cockpit - 2019.04.13 at 13h 34m 06s.xml">
+      <configuration name="DataVisualControllerTest.cockpit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ContractsMapperTest_insertCONTest - 2019.04.08 at 13h 43m 23s.xml">
-      <configuration name="ContractsMapperTest.insertCONTest" configurationId="JUnit" />
+    <history-entry file="DataVisualControllerTest_cockpit - 2019.04.13 at 14h 23m 05s.xml">
+      <configuration name="DataVisualControllerTest.cockpit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ContractsMapperTest_insertCONTest - 2019.04.08 at 13h 43m 40s.xml">
-      <configuration name="ContractsMapperTest.insertCONTest" configurationId="JUnit" />
+    <history-entry file="DataVisualControllerTest_cockpit - 2019.04.13 at 14h 23m 07s.xml">
+      <configuration name="DataVisualControllerTest.cockpit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ContractsMapperTest_selectOneByIdTest - 2019.04.08 at 11h 49m 18s.xml">
-      <configuration name="ContractsMapperTest.selectOneByIdTest" configurationId="JUnit" />
+    <history-entry file="DataVisualControllerTest_cockpit - 2019.04.13 at 14h 23m 09s.xml">
+      <configuration name="DataVisualControllerTest.cockpit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ContractsMapperTest_selectOneByIdTest - 2019.04.08 at 11h 50m 06s.xml">
-      <configuration name="ContractsMapperTest.selectOneByIdTest" configurationId="JUnit" />
+    <history-entry file="DataVisualControllerTest_cockpit - 2019.04.14 at 12h 20m 59s.xml">
+      <configuration name="DataVisualControllerTest.cockpit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ContractsMapperTest_updateConTest - 2019.04.08 at 11h 34m 25s.xml">
-      <configuration name="ContractsMapperTest.updateConTest" configurationId="JUnit" />
+    <history-entry file="DataVisualControllerTest_cockpit - 2019.04.14 at 12h 21m 37s.xml">
+      <configuration name="DataVisualControllerTest.cockpit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ContractsMapperTest_updateConTest - 2019.04.08 at 11h 35m 26s.xml">
-      <configuration name="ContractsMapperTest.updateConTest" configurationId="JUnit" />
+    <history-entry file="DataVisualControllerTest_cockpit - 2019.04.14 at 12h 22m 43s.xml">
+      <configuration name="DataVisualControllerTest.cockpit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ContractsMapperTest_updateConTest - 2019.04.08 at 11h 36m 21s.xml">
-      <configuration name="ContractsMapperTest.updateConTest" configurationId="JUnit" />
+    <history-entry file="DataVisualControllerTest_cockpit - 2019.04.14 at 12h 25m 11s.xml">
+      <configuration name="DataVisualControllerTest.cockpit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RightsManMapperTest_insertRightsTest - 2019.04.07 at 15h 55m 39s.xml">
-      <configuration name="RightsManMapperTest.insertRightsTest" configurationId="JUnit" />
+    <history-entry file="DataVisualControllerTest_cockpit - 2019.04.14 at 12h 32m 14s.xml">
+      <configuration name="DataVisualControllerTest.cockpit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RightsManMapperTest_selectRightsByLimitAndOffsetTest - 2019.04.07 at 20h 39m 40s.xml">
-      <configuration name="RightsManMapperTest.selectRightsByLimitAndOffsetTest" configurationId="JUnit" />
+    <history-entry file="DataVisualControllerTest_cockpit - 2019.04.14 at 12h 32m 15s.xml">
+      <configuration name="DataVisualControllerTest.cockpit" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114075000" />
+    <option name="totallyTimeSpent" value="194865000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -1876,20 +2045,20 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.65954924" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5112693" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977462" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38552788" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7010676" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977462" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977462" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2274678" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27092275" sideWeight="0.49584815" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28540772" sideWeight="0.5041518" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977462" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1910,10 +2079,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hrms/service/serviceimpl/ChartsDataServiceImpl.java</url>
+          <line>80</line>
+          <properties />
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="21" />
+      <option name="time" value="55" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1922,439 +2099,395 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/classes/com/hrms/mapper/RightsManMapper.class">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/plug-in/javascript.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/plug-in/javascript/charts.public.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+        <state relative-caret-position="525">
+          <caret line="42" column="15" lean-forward="true" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/test/ContractsMapperTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="712">
+          <caret line="52" column="39" lean-forward="false" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/util/JsonMsg.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/plug-in/jquery/jquery-1.9.1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/controller/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/hrms/mapper/EmployeeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="73" column="30" lean-forward="false" selection-start-line="73" selection-start-column="30" selection-end-line="73" selection-end-column="30" />
-          <folding>
-            <marker date="1525913172000" expanded="true" signature="1321:1513" ph="SELECT emp_i... WHERE" />
-            <marker date="1525913172000" expanded="true" signature="1630:1826" ph="SELECT emp_i... WHERE" />
-            <marker date="1525913172000" expanded="true" signature="1942:2130" ph="SELECT FROM tbl_emp" />
-            <marker date="1525913172000" expanded="true" signature="2225:2466" ph="SELECT FROM tbl_emp" />
-            <marker date="1525913172000" expanded="true" signature="2561:2865" ph="UPDATE SET e... SET" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/mapper/LoginMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/test/LoginMapperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="245">
+          <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/rightsManagePage.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/employeeAdd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3220">
+          <caret line="92" column="39" lean-forward="false" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/Vo/PieChartsVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="13" column="15" lean-forward="false" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/employeePage.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/Vo/HistogramVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/commom/head.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-805">
-          <caret line="31" column="18" lean-forward="true" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/plug-in/layer/layer/need/layer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1354" lean-forward="true" selection-start-line="0" selection-start-column="1354" selection-end-line="0" selection-end-column="1354" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/img/loginBackGround.jpg" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/img/login.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/main.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="44" column="119" lean-forward="true" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="119" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/SQL.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/bean/RightsMan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
-          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/service/LoginService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="193">
+          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#659#660#0" expanded="false" />
+            <element signature="e#680#681#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/hrms/mapper/DepartmentMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/Vo/MapVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="53" />
+        <state relative-caret-position="403">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
           <folding>
-            <marker date="1554603513624" expanded="true" signature="693:875" ph="SELECT dept_... LIMIT" />
-            <marker date="1554603513624" expanded="true" signature="974:1212" ph="UPDATE SET d... SET" />
+            <element signature="e#603#604#0" expanded="false" />
+            <element signature="e#626#627#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/hrms/mapper/LoginMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/Vo/DistributeVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="595">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#385#386#0" expanded="false" />
+            <element signature="e#410#411#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/mapper/EmployeeMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/serviceimp.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/serviceimpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/util/JSONArray.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/util/JsonMsg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="379">
+          <caret line="54" column="38" lean-forward="true" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/controller/DepartmentController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/util/JSONObject.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/controller/TestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="126" column="50" lean-forward="true" selection-start-line="126" selection-start-column="50" selection-end-line="126" selection-end-column="50" />
-          <folding />
+        <state relative-caret-position="292">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/util/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1418">
+          <caret line="192" column="0" lean-forward="false" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/service/DepartmentService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-          <folding>
-            <element signature="e#781#782#0" expanded="false" />
-            <element signature="e#833#834#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/mapper/DepartmentMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="17" column="42" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="17" selection-end-column="42" />
+        <state relative-caret-position="105">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/bean/Department.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/departmentPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4830">
-          <caret line="138" column="11" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="155" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/departmentUpdate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2380">
-          <caret line="68" column="10" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/contractsPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3535">
-          <caret line="101" column="13" lean-forward="false" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/bean/ContractsEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1610">
-          <caret line="46" column="12" lean-forward="true" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
-          <folding>
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#257#258#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personRightsUpdate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="94" column="66" lean-forward="false" selection-start-line="94" selection-start-column="66" selection-end-line="94" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/hrms/mapper/RightsManMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="47" column="13" lean-forward="true" selection-start-line="40" selection-start-column="3" selection-end-line="47" selection-end-column="13" />
-          <folding>
-            <marker date="1554618156044" expanded="true" signature="812:1057" ph="SELECT right... LIMIT" />
-            <marker date="1554618156044" expanded="true" signature="1156:1481" ph="UPDATE SET r... SET" />
-            <marker date="1554618156044" expanded="true" signature="1608:1824" ph="SELECT right... WHERE" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/hrms/mapper/ContractsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="45" column="13" lean-forward="true" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
-          <folding>
-            <marker date="1554695397328" expanded="true" signature="747:959" ph="SELECT contr... LIMIT" />
-            <marker date="1554695397328" expanded="true" signature="1061:1332" ph="UPDATE SET c... SET" />
-            <marker date="1554695397328" expanded="true" signature="1465:1663" ph="SELECT contr... WHERE" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/contractsUpdate.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="76" column="6" lean-forward="true" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/personRightsAdd.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/img/company3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/commom/leftsidebar.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="33" column="149" lean-forward="false" selection-start-line="33" selection-start-column="135" selection-end-line="33" selection-end-column="149" />
-          <folding>
-            <element signature="n#style#0;n#font#0;n#a#0;n#li#1;n#ul#0;n#li#0;n#ul#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/departmentAdd.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="7" column="37" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/controller/RightsManController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="125" column="5" lean-forward="true" selection-start-line="112" selection-start-column="4" selection-end-line="125" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/service/RightManService.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/service/RegionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/JDK/8/src.zip!/javax/annotation/Resource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="57" column="15" lean-forward="false" selection-start-line="57" selection-start-column="15" selection-end-line="57" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/service/EmployeeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="19" column="11" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/mapper/ContractsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/test/CommonMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
-          <caret line="45" column="5" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
+          <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/mapper/RightsManMapper.java">
+    <entry file="jar://E:/Aenvironment/repo/m2/org/springframework/spring-jdbc/4.2.9.RELEASE/spring-jdbc-4.2.9.RELEASE.jar!/org/springframework/jdbc/core/JdbcTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="59" column="60" lean-forward="true" selection-start-line="54" selection-start-column="4" selection-end-line="59" selection-end-column="60" />
+        <state relative-caret-position="260">
+          <caret line="58" column="23" lean-forward="false" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/test/DepartmentMapperTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/springmvc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2310">
-          <caret line="76" column="5" lean-forward="true" selection-start-line="69" selection-start-column="3" selection-end-line="76" selection-end-column="5" />
+        <state relative-caret-position="420">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/test/EmployeeMapperTest.java">
+    <entry file="jar://E:/Aenvironment/repo/m2/org/mybatis/mybatis-spring/1.3.1/mybatis-spring-1.3.1.jar!/org/mybatis/spring/SqlSessionTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        <state relative-caret-position="-1525">
+          <caret line="37" column="80" lean-forward="false" selection-start-line="37" selection-start-column="80" selection-end-line="37" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/MyBatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="28" column="21" lean-forward="true" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Aenvironment/repo/m2/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/test/DataVisualControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/service/ContractsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="38" column="35" lean-forward="true" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
-          <folding>
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/mapper/ContractsMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="50" column="0" lean-forward="true" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state relative-caret-position="420">
+          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/test/RightsManMapperTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/contractsPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="56" column="46" lean-forward="false" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="46" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/test/ContractsMapperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="44" column="36" lean-forward="true" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/controller/ContractsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1190">
-          <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+        <state relative-caret-position="-274">
+          <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/commom/leftsidebar.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/Vo/CockpitVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/service/ChartsDataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/JDK/8/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/service/serviceimpl/ChartsDataServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1555216101551" expanded="true" signature="839:1510" ph="SELECT SUM(I... *" />
+            <marker date="1555216101551" expanded="true" signature="970:1420" ph="SELECT * FRO... rvaud02" />
+            <marker date="1555216101551" expanded="true" signature="986:1290" ph="SELECT a.rva... " />
+            <marker date="1555216101551" expanded="true" signature="2139:2753" ph="SELECT SUM(I... *" />
+            <marker date="1555216101551" expanded="true" signature="2213:2663" ph="SELECT * FRO... rvaud02" />
+            <marker date="1555216101551" expanded="true" signature="2229:2533" ph="SELECT a.rva... " />
+            <marker date="1555216101551" expanded="true" signature="3341:3973" ph="SELECT SUM(I... *" />
+            <marker date="1555216101551" expanded="true" signature="3424:3883" ph="SELECT * FRO... rvaud02" />
+            <marker date="1555216101551" expanded="true" signature="3440:3753" ph="SELECT a.rva... " />
+            <marker date="1555216101551" expanded="true" signature="10634:10864" ph="select b.rvb... rva_file" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Aenvironment/repo/m2/org/springframework/spring-web/4.2.9.RELEASE/spring-web-4.2.9.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="137" column="13" lean-forward="true" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/service/CountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/service/serviceimpl/CountServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="46" column="21" lean-forward="false" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/employeeAdd.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/visualDataPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="26" column="12" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="26" selection-end-column="12" />
+        <state relative-caret-position="62">
+          <caret line="612" column="19" lean-forward="true" selection-start-line="612" selection-start-column="19" selection-end-line="612" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/contractsAdd.jsp">
+    <entry file="jar://E:/Aenvironment/repo/m2/org/springframework/spring-webmvc/4.2.9.RELEASE/spring-webmvc-4.2.9.RELEASE.jar!/org/springframework/web/servlet/ModelAndView.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="60" column="20" lean-forward="false" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#label#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="365">
+          <caret line="96" column="5" lean-forward="true" selection-start-line="96" selection-start-column="5" selection-end-line="96" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/controller/DepartmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="141" column="26" lean-forward="true" selection-start-line="141" selection-start-column="26" selection-end-line="141" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/util/JsonMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hrms/controller/visualDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="37" column="16" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>

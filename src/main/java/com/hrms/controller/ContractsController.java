@@ -55,6 +55,19 @@ public class ContractsController {
 	}
 
 	/**
+	 * 分页查询：返回指定页数对应的数据
+	 * @param pageNo
+	 * @return
+	 */
+	@RequestMapping(value = "/getDataVisual", method = RequestMethod.GET)
+	public ModelAndView getDataVisual(){
+		ModelAndView mv = new ModelAndView("visualDataPage");
+
+		return mv;
+
+	}
+
+	/**
 	 * 部门更改
 	 * @param deptId
 	 * @param department
@@ -99,6 +112,7 @@ public class ContractsController {
 	@RequestMapping(value = "/addCon", method = RequestMethod.PUT)
 	@ResponseBody
 	public JsonMsg addCon(ContractsEntity contractsEntity){
+
 		int res = contractsService.addCon(contractsEntity);
 		if (res != 1){
 			return JsonMsg.fail().addInfo("add_dept_error", "添加异常！");

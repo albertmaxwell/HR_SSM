@@ -18,21 +18,24 @@
 		<%@ include file="./commom/leftsidebar.jsp"%>
 
 		<!-- 部门表格内容 -->
-		<div class="con_info col-sm-10">
-			<div class="panel panel-success">
+		<div class="con_info col-sm-10" style="position:relative; top:-15px;">
+			<div style="width: 1270px" class="panel panel-success">
 				<!-- 路径导航 -->
-				<div class="panel-heading">
-					<ol class="breadcrumb">
-						<li><a href="#">部门管理</a></li>
-						<li class="active">部门信息</li>
+				<div  class="panel-heading">
+					<ol  class="breadcrumb">
+						<li><a style="font-weight: bolder;font-size: x-large" href="#">部门管理</a></li>
+						<li style="font-weight: bolder;font-size: x-large" class="active">部门信息</li>
 					</ol>
 				</div>
 				<!-- Table -->
 				<table class="table table-bordered table-hover" id="con_table">
 					<thead>
-					<th>部门编号</th>
-					<th>部门名称</th>
-					<th>部门老大</th>
+					<th>合同ID</th>
+					<th>合同编号</th>
+					<th>部门标题</th>
+					<th>省</th>
+					<th>市</th>
+					<th>区</th>
 					<th>操作</th>
 					</thead>
 					<tbody>
@@ -41,7 +44,10 @@
 							<td>${con.contractsId}</td>
 							<td>${con.contractsCode}</td>
 							<td>${con.contractsTitle}</td>
-							<td>
+							<td>${con.provincePid}</td>
+							<td>${con.cityPid}</td>
+							<td>${con.areaPid}</td>
+							<td style="width: 150px">
 								<a href="#" role="button" class="btn btn-primary con_edit_btn" data-toggle="modal" data-target=".con-update-modal">编辑</a>
 								<a href="#" role="button" class="btn btn-danger con_delete_btn">删除</a>
 							</td>
@@ -56,7 +62,7 @@
 					</div>
 					<nav aria-label="Page navigation" class="pull-right">
 						<ul class="pagination">
-							<li><a style="font-size: large;font-weight: bolder" href="/hrms/con/getconList?pageNo=1">首页</a></li>
+							<li><a style="font-size: large;font-weight: bolder" href="/hrms/contracts/getConList?pageNo=1">首页</a></li>
 							<c:if test="${curPageNo==1}">
 								<li class="disabled">
 									<a href="#" aria-label="Previous" class="prePage">
@@ -74,10 +80,10 @@
 
 							<c:forEach begin="1" end="${totalPages<5?totalPages:5}" step="1" var="itemPage">
 								<c:if test="${curPageNo == itemPage}">
-									<li class="active"><a href="/hrms/con/getconList?pageNo=${itemPage}">${itemPage}</a></li>
+									<li class="active"><a href="/hrms/contracts/getConList?pageNo=${itemPage}">${itemPage}</a></li>
 								</c:if>
 								<c:if test="${curPageNo != itemPage}">
-									<li><a href="/hrms/con/getconList?pageNo=${itemPage}">${itemPage}</a></li>
+									<li><a href="/hrms/contracts/getConList?pageNo=${itemPage}">${itemPage}</a></li>
 								</c:if>
 							</c:forEach>
 
@@ -95,7 +101,7 @@
 									</a>
 								</li>
 							</c:if>
-							<li><a style="font-size: large;font-weight: bolder" href="/hrms/con/getconList?pageNo=${totalPages}">尾页</a></li>
+							<li><a style="font-size: large;font-weight: bolder" href="/hrms/contracts/getConList?pageNo=${totalPages}">尾页</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -118,7 +124,7 @@
     $(".prePage").click(function () {
         if (curPageNo > 1){
             var pageNo = curPageNo - 1;
-            $(this).attr("href", "/hrms/con/getConList?pageNo="+pageNo);
+            $(this).attr("href", "/hrms/contracts/getConList?pageNo="+pageNo);
         }
     });
     //下一页

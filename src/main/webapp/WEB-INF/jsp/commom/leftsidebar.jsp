@@ -43,10 +43,10 @@
             <a href="#"  data-toggle="collapse" data-target="#collapse_dept">
                 <span class="navigation_bar_font" class="glyphicon glyphicon-cloud" aria-hidden="true">合同管理</span>
             </a>
-            <ul class="nav nav-pills nav-stacked" id="collapse_dept">
+            <ul class="nav nav-pills nav-stacked" id="collapse_con">
                 <li class="navigation_bar_font" role="presentation"><a href="#" class="contracts_info"><span class="glyphicon glyphicon-user"></span><font style="color: #ffffff;padding-left: 13px">合同信息</font></a></li>
                 <li class="navigation_bar_font" role="presentation"><a href="#" class="con_add_btn" data-toggle="modal" data-target=".con-add-modal"><span class="glyphicon glyphicon-plus"></span><font style="color: #ffffff;padding-left: 10px">新增合同</font></a></li>
-                <li class="navigation_bar_font" role="presentation"><a href="#" class="dept_clearall_btn"><span class="glyphicon glyphicon-minus"></span><font style="color: #ffffff;padding-left: 10px">数据统计</font></a></li>
+                <li class="navigation_bar_font" role="presentation"><a href="#" class="dept_visualData_btn"><span class="glyphicon glyphicon-minus"></span><font style="color: #ffffff;padding-left: 10px">数据统计</font></a></li>
             </ul>
         </li>
     </ul>
@@ -86,12 +86,11 @@
 
         $(this).attr("href", "/hrms/contracts/getConList");
     });
-    //员工清零这个功能暂未实现
-    $(".emp_clearall_btn").click(function () {
 
-        layer.alert("对不起，您暂无权限进行操作！请先获取权限", {icon:5} );
-        return false;
+    //合同数据可视化
+    $(".dept_visualData_btn").click(function () {
 
+        $(this).attr("href", "/hrms/contracts/getDataVisual");
 
     });
     //部门清零这个功能暂未实现

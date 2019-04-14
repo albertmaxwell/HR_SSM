@@ -16,17 +16,13 @@ import java.util.List;
 public interface ContractsMapper {
 
 	String TABLE_NAME = "tbl_contracts";
-	String INSERT_FIELDS = "contracts_code, contracts_title";
+	String INSERT_FIELDS = "contracts_code, contracts_title,province_pid, city_pid,area_pid";
 	String SELECT_FIELDS = "dept_id as 'deptId', " +
 			"dept_name as 'deptName', " +
 			"dept_leader as 'deptLeader'";
 
 	List<ContractsEntity> selectConByLimitAndOffset(@Param("offset") Integer offset,
 													@Param("limit") Integer limit);
-
-
-	@Select({"SELECT COUNT(*) FROM", TABLE_NAME})
-	int countCon();
 
 
 	/**
@@ -40,11 +36,18 @@ public interface ContractsMapper {
 	 */
 	ContractsEntity selectOneById(@Param("conId") int conId);
 
+	@Select({"SELECT COUNT(*) FROM", TABLE_NAME})
+	int countCon();
+
 	/**
 	 * =================================新增============================================
 	 */
 	@Insert({"INSERT INTO",TABLE_NAME, "(", INSERT_FIELDS ,") " +
-			"VALUES(#{contractsEntity.contractsCode}, #{contractsEntity.contractsTitle})"})
+			"VALUES(#{contractsEntity.contractsCode}, #{contractsEntity.contractsTitle}," +
+			"#{contractsEntity.provincePid},"+
+			"#{contractsEntity.cityPid},"+
+			"#{contractsEntity.areaPid}"+
+			")"})
 	int insertCon(@Param("contractsEntity") ContractsEntity contractsEntity);
 
 }

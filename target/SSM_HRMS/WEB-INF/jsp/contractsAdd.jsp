@@ -34,20 +34,15 @@
 					<div class="form-group">
 						<label for="add_conTitle" class="col-sm-2 control-label">合同标题</label>
 						<div class="col-sm-8">
-							<input type="text" name="contractsTitle" class="form-control" id="add_conTitle" placeholder="XXX">
+							<input onselect="getData()" type="text" name="contractsTitle" class="form-control" id="add_conTitle" placeholder="XXX">
 						</div>
 					</div>
 
-
-
-
-
-
 					<div class="form-group">
-						<label style="font-weight: bold;font-size: large" for="add_department" class="col-sm-2 control-label">省</label>
+						<label style="font-weight: bold;font-size: large" for="add_province" class="col-sm-2 control-label">省</label>
 						<div class="col-sm-8">
 							<div >
-								<select   class="inputStyle" class="form-control" name="departmentId" id="add_department">
+								<select    class="inputStyle" class="form-control" name="provincePid" id="add_province">
 									<%-- <option value="1">CEO</option>--%>
 								</select>
 							</div>
@@ -55,10 +50,10 @@
 					</div>
 
 					<div class="form-group">
-						<label style="font-weight: bold;font-size: large" for="add_department" class="col-sm-2 control-label">市</label>
+						<label style="font-weight: bold;font-size: large" for="add_city" class="col-sm-2 control-label">市</label>
 						<div class="col-sm-8">
 							<div >
-								<select  class="inputStyle" class="form-control" name="departmentId" id="add_department">
+								<select   class="inputStyle" class="form-control" name="cityPid" id="add_city">
 									<%-- <option value="1">CEO</option>--%>
 								</select>
 							</div>
@@ -66,22 +61,15 @@
 					</div>
 
 					<div class="form-group">
-						<label style="font-weight: bold;font-size: large" for="add_department" class="col-sm-2 control-label">区</label>
+						<label style="font-weight: bold;font-size: large" for="add_area" class="col-sm-2 control-label">区</label>
 						<div class="col-sm-8">
 							<div >
-								<select  class="inputStyle" class="form-control" name="departmentId" id="add_department">
+								<select  class="inputStyle" class="form-control" name="areaPid" id="add_area">
 									<%-- <option value="1">CEO</option>--%>
 								</select>
 							</div>
 						</div>
 					</div>
-
-
-
-
-
-
-
 
 				</form>
 			</div>
@@ -99,18 +87,101 @@
     //1 点击部门新增按钮，弹出模态框；
     //2 输入新增部门信息，点击保存按钮，发送AJAX请求到后台进行保存；
     //3 保存成功跳转最后一页
+
+    $("select#add_province").click(function(){
+
+        getPrivinceData(1);
+
+         });
+
+    $("select#add_city").click(function() {
+
+        var provincepid = document.getElementById("add_province").value;
+
+
+        getCityData(provincepid);
+
+    });
+
+    $("select#add_area").click(function() {
+
+        var cityPid = document.getElementById("add_city").value;
+
+        getAreaData(cityPid);
+
+    });
+
+
     $(".con_add_btn").click(function () {
 
-        $('.con-add-modal').modal({
+        $('.emp-add-modal').modal({
             backdrop:static,
             keyboard:true
         });
-
     });
+
+
+    function getPrivinceData(provincrePid){
+
+        $.ajax({
+            url:"/hrms/dept/getPCAList/"+provincrePid,
+            type:"GET",
+            async: false, //是否异步请求，默认为true
+            success:function (result) {
+
+                if (result.code == 100){
+                    $.each(result.extendInfo.list, function () {
+                        var optionEle = $("<option></option>").append(this.name).attr("value", this.id);
+                        optionEle.appendTo("#add_province");
+                    });
+                }
+            }
+        });
+    }
+
+
+    function getCityData(provincrePid){
+
+        $.ajax({
+            url:"/hrms/dept/getPCAList/"+provincrePid,
+            type:"GET",
+            async: false, //是否异步请求，默认为true
+            success:function (result) {
+
+                if (result.code == 100){
+                    $.each(result.extendInfo.list, function () {
+                        var optionEle = $("<option></option>").append(this.name).attr("value", this.id);
+                        optionEle.appendTo("#add_city");
+                    });
+                }
+            }
+        });
+    }
+
+
+
+    function getAreaData(citypid){
+
+        $.ajax({
+            url:"/hrms/dept/getPCAList/"+citypid,
+            type:"GET",
+            async: false, //是否异步请求，默认为true
+            success:function (result) {
+
+                if (result.code == 100){
+                    $.each(result.extendInfo.list, function () {
+                        var optionEle = $("<option></option>").append(this.name).attr("value", this.id);
+                        optionEle.appendTo("#add_area");
+                    });
+                }
+            }
+        });
+    }
 
     $(".con_save_btn").click(function () {
         var conCode = $("#add_conCode").val();
         var conTitle = $("#add_conTitle").val();
+        var province = $("#add_province").val();
         //验证省略...
         $.ajax({
             url:"/hrms/contracts/addCon",
@@ -136,10 +207,7 @@
             }
         });
 
-
-
     });
-
 
 
 </script>

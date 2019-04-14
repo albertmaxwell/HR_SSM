@@ -13,13 +13,13 @@
 
 
 	<!-- 中间部分（左侧栏+表格内容） -->
-	<div class="hrms_rights_body">
+	<div class="hrms_rights_body" style="position:relative; top:-15px;">
 		<!-- 左侧栏 -->
 		<%@ include file="./commom/leftsidebar.jsp"%>
 
 		<!-- 部门表格内容 -->
 		<div class="rights_manage col-sm-10">
-			<div class="panel panel-success">
+			<div style="width: 1270px" class="panel panel-success">
 				<!-- 路径导航 -->
 				<div class="panel-heading">
 					<ol class="breadcrumb">
@@ -43,7 +43,7 @@
 							<td>${rights.rightsName}</td>
 							<td>${rights.rightsAccount}</td>
 							<td>${rights.rightsPassword}</td>
-							<td>
+							<td style="width: 150px">
 								<a href="#" role="button" class="btn btn-primary rights_edit_btn" data-toggle="modal" data-target=".rights-update-modal">编辑</a>
 								<a href="#" role="button" class="btn btn-danger rights_delete_btn">删除</a>
 							</td>

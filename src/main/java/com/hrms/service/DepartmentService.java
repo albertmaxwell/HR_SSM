@@ -31,6 +31,10 @@ public class DepartmentService {
     public List<Department> getDeptList(Integer offset, Integer limit){
         return departmentMapper.selectDeptsByLimitAndOffset(offset, limit);
     };
+
+    public List<Department> getCheckList(String checkValue){
+        return departmentMapper.selectDeptsListBycheck(checkValue);
+    };
     public Department getDeptById(Integer deptId){
         return departmentMapper.selectOneById(deptId);
     }

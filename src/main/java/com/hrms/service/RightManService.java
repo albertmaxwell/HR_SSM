@@ -6,6 +6,7 @@ import com.hrms.bean.RightsMan;
 import com.hrms.mapper.DepartmentMapper;
 import com.hrms.mapper.RightsManMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.support.JdbcDaoSupport;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,6 +20,7 @@ public class RightManService {
 
 	@Autowired
 	RightsManMapper rightsManMapper;
+
 
 
 	public int getRightsCount(){

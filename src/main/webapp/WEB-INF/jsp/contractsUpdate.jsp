@@ -26,6 +26,27 @@
 						</div>
 					</div>
 
+					<div class="form-group">
+						<label for="update_provincePid" class="col-sm-2 control-label">省</label>
+						<div class="col-sm-8">
+							<input type="text" name="provincePid" class="form-control" id="update_provincePid">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="update_cityPid" class="col-sm-2 control-label">城市</label>
+						<div class="col-sm-8">
+							<input type="text" name="cityPid" class="form-control" id="update_cityPid">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="update_areaPid" class="col-sm-2 control-label">区</label>
+						<div class="col-sm-8">
+							<input type="text" name="areaPid" class="form-control" id="update_areaPid">
+						</div>
+					</div>
+
 				</form>
 			</div>
 			<div class="modal-footer">
@@ -58,6 +79,9 @@
                     //回显
                     $("#update_conCode").val(conData.contractsCode);
                     $("#update_conTitle").val(conData.contractsTitle);
+                    $("#update_provincePid").val(conData.provincePid);
+                    $("#update_cityPid").val(conData.cityPid);
+                    $("#update_areaPid").val(conData.areaPid);
                 }else {
                     alert(result.extendInfo.get_con_error);
                 }

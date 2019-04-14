@@ -36,7 +36,7 @@ public class ContractsMapperTest {
 
 	@Test
 	public void updateConTest(){
-		ContractsEntity contractsEntity = new ContractsEntity(3, "002", "test");
+		ContractsEntity contractsEntity = new ContractsEntity(3, "002", "test","","","");
 		int res = contractsService.updateConById(3, contractsEntity);
 		System.out.println(res);
 	}
@@ -49,7 +49,7 @@ public class ContractsMapperTest {
 
 	@Test
 	public void insertCONTest(){
-		ContractsEntity contractsEntity = new ContractsEntity(1, "233","2");
+		ContractsEntity contractsEntity = new ContractsEntity(11, "233","2","1","1","1");
 		int res = contractsService.addCon(contractsEntity);
 		System.out.println(res);
 	}

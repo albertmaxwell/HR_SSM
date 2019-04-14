@@ -6,9 +6,7 @@
     <title>员工管理页面</title>
 
 <%--
-
     <script src="<%=request.getContextPath()%>/plug-in/jquery/jquery-1.9.1.js"></script>
-
     <script src="<%=request.getContextPath()%>/plug-in/layer/layer/layer.js"></script>
 --%>
 
@@ -53,7 +51,7 @@
                                 <td>${emp.empEmail}</td>
                                 <td>${emp.gender == "F"? "女": "男"}</td>
                                 <td>${emp.department.deptName}</td>
-                                <td>
+                                <td style="width: 150px">
                                     <a href="#" role="button" class="btn btn-primary emp_edit_btn" data-toggle="modal" data-target=".emp-update-modal">编辑</a>
                                     <a href="#" role="button" class="btn btn-danger emp_delete_btn">删除</a>
                                 </td>
