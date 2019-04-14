@@ -28,16 +28,17 @@ public class visualDataController {
 
 	/**
 	 * 查询平台运营驾驶舱数据
-	 * @return
 	 *
+	 * @return
 	 */
 	@RequestMapping(value = "/cockpit", method = RequestMethod.GET)
 	@ResponseBody
-	public JsonMsg cockpit(@RequestParam(value="startDate", required=true) String startDate,
-						   @RequestParam(value="endDate", required=true) String endDate) {
-		JsonMsg j = new JsonMsg();
-		try{
-			if(StringUtils.isEmpty(startDate) || StringUtils.isEmpty(endDate)) {
+	public JsonMessage cockpit(@RequestParam(value = "startDate", required = true) String startDate,
+							   @RequestParam(value = "endDate", required = true) String endDate) {
+		JsonMessage j = new JsonMessage();
+
+		try {
+			if (StringUtils.isEmpty(startDate) || StringUtils.isEmpty(endDate)) {
 				throw new Exception("参数异常");
 			}
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
@@ -51,18 +52,20 @@ public class visualDataController {
 			CockpitVo cockpitVo = new CockpitVo();
 			cockpitVo.setStartDate(startDate);
 			cockpitVo.setEndDate(endDate);
-
-
 			cockpitVo = countService.queryCockpit(cockpitVo);
 
-			return JsonMsg.success().addInfo("cockpitVo",cockpitVo );
+			j.setObj(cockpitVo);
 
-		}catch(Exception e){
+
+			System.out.println(j.getObj());
+
+			return j;
+
+		} catch (Exception e) {
 			e.printStackTrace();
-			return JsonMsg.fail();
+			j.setSuccess(false);
+			j.setMsg(e.getMessage());
 		}
-
+		return j;
 	}
-
-
 }

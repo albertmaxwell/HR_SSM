@@ -4,6 +4,8 @@
 <head>
 	<title>部门新增页面</title>
 
+
+
 	<style type="text/css">
 
 		.inputStyle{
@@ -17,14 +19,14 @@
 </head>
 <body>
 <div class="modal fade con-add-modal" tabindex="-1" role="dialog" aria-labelledby="con-add-modal">
-	<div class="modal-dialog" role="document">
+	<div style="width: 1000px;height: 1200px" class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				<h4 class="modal-title">合同新增</h4>
 			</div>
 			<div class="modal-body">
-				<form class="form-horizontal add_con_form">
+				<form   class="form-horizontal add_con_form">
 					<div class="form-group">
 						<label for="add_conCode" class="col-sm-2 control-label">合同编号</label>
 						<div class="col-sm-8">
@@ -59,7 +61,6 @@
 							</div>
 						</div>
 					</div>
-
 					<div class="form-group">
 						<label style="font-weight: bold;font-size: large" for="add_area" class="col-sm-2 control-label">区</label>
 						<div class="col-sm-8">
@@ -70,16 +71,18 @@
 							</div>
 						</div>
 					</div>
-
 				</form>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
 				<button type="button" class="btn btn-primary con_save_btn">保存</button>
 			</div>
+
+
 		</div><!-- /.modal-content -->
 	</div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
 
 <script type="text/javascript">
     <!-- ==========================部门新增操作=================================== -->
@@ -211,5 +214,7 @@
 
 
 </script>
+
 </body>
+
 </html>

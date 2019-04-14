@@ -5,28 +5,33 @@
 <head>
 	<title>部门管理页面</title>
 
+	<%--<script src="<%=request.getContextPath()%>/plug-in/element-ui/css/index.css"></script>
+	<script src="<%=request.getContextPath()%>/plug-in/element-ui/css/elementui-ext.css"></script>
+	<script src="<%=request.getContextPath()%>/plug-in/vue/vue.js"></script>
+	<script src="<%=request.getContextPath()%>/plug-in/vue/vue-resource.js"></script>
+	<script src="<%=request.getContextPath()%>/plug-in/element-ui/index.js"></script>--%>
 </head>
 <body>
 <div class="hrms_con_container">
 	<!-- 导航栏-->
 	<%@ include file="./commom/head.jsp"%>
-
-
 	<!-- 中间部分（左侧栏+表格内容） -->
 	<div class="hrms_con_body">
 		<!-- 左侧栏 -->
 		<%@ include file="./commom/leftsidebar.jsp"%>
-
 		<!-- 部门表格内容 -->
 		<div class="con_info col-sm-10" style="position:relative; top:-15px;">
 			<div style="width: 1270px" class="panel panel-success">
 				<!-- 路径导航 -->
 				<div  class="panel-heading">
 					<ol  class="breadcrumb">
-						<li><a style="font-weight: bolder;font-size: x-large" href="#">部门管理</a></li>
-						<li style="font-weight: bolder;font-size: x-large" class="active">部门信息</li>
+						<li><a style="font-weight: bolder;font-size: large" href="#">部门管理</a></li>
+						<li style="font-weight: bolder;font-size: large" class="active">部门信息</li>
 					</ol>
 				</div>
+				<%--<div>
+					<el-button type="warning">警告按钮</el-button>
+				</div>--%>
 				<!-- Table -->
 				<table class="table table-bordered table-hover" id="con_table">
 					<thead>
@@ -118,6 +123,7 @@
 </div><!-- /.hrms_con_container -->
 
 <script type="text/javascript">
+
     var curPageNo = ${curPageNo};
     var totalPages = ${totalPages};
     //上一页

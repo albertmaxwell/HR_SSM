@@ -1,5 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%--<script src="<%=request.getContextPath()%>/plug-in/jquery/jquery-1.9.1.js"></script>--%>
 <script src="<%=request.getContextPath()%>/plug-in/layer/layer/layer.js"></script>
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">

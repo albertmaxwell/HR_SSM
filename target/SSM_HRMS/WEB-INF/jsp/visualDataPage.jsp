@@ -7,12 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-
-
 	<script src="<%=request.getContextPath()%>/plug-in/laydate/laydate.js"></script>
 	<script src="<%=request.getContextPath()%>/plug-in/echart/echarts.js"></script>
 	<script src="<%=request.getContextPath()%>/plug-in/echart/map1/china.js"></script>
-
 
 	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
 	<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
@@ -602,9 +599,7 @@
 
     //查询
     function query() {
-        var index = layer.load(0, {
-            shade: [0.5, '#fff']
-        });
+
         var startDate = $("#startDate").val();
         var endDate = $("#endDate").val();
         $.ajax({
@@ -616,13 +611,11 @@
             dataType: "json", //预处理服务端可能返回的数据类型
             scriptCharset: "UTF-8", //编码
             success: function (data) { //请求成功的回调函数
-                if (data.success) {
-
-                    setData(data.obj);
+                if (true) {
+                    alert("234324");
                     console.log(data);
-                } else {
-                    alert("fgfg");
-                    layer.alert(data.msg, {icon: 2});
+                    setData(data.obj);
+
                 }
                 layer.close(index);
             }
