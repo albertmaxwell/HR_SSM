@@ -67,6 +67,20 @@ public class ContractsController {
 
 	}
 
+
+	/**
+	 * 分页查询：返回指定页数对应的数据
+	 * @param pageNo
+	 * @return
+	 */
+	@RequestMapping(value = "/getCityDataVisual", method = RequestMethod.GET)
+	public ModelAndView getCityDataVisual(){
+		ModelAndView mv = new ModelAndView("cityReport");
+
+		return mv;
+
+	}
+
 	/**
 	 * 部门更改
 	 * @param deptId

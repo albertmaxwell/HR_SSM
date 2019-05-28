@@ -12,6 +12,7 @@
   <properties>
     <spring.version>4.2.9.RELEASE</spring.version>
     <jackson.version>2.5.4</jackson.version>
+    <jjwt.version>0.9.0</jjwt.version>
   </properties>
 
   <dependencies>
@@ -50,7 +51,13 @@
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>3.1.14</version>
+      <version>8.0.11</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.jsonwebtoken</groupId>
+      <artifactId>jjwt</artifactId>
+      <version>${jjwt.version}</version>
     </dependency>
 
     <!-- mybatis -->
@@ -126,6 +133,45 @@
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-web</artifactId>
       <version>2.9.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-jpa</artifactId>
+      <version>1.7.1.RELEASE</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>4.1.3.RELEASE</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.persistence</groupId>
+      <artifactId>persistence-api</artifactId>
+      <version>1.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+        <version>2.2.4</version>
+    </dependency>
+
+
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>14.0</version>
+    </dependency>
+
+
+
+    <dependency>
+      <groupId>com.resource.common</groupId>
+      <artifactId>resource_common</artifactId>
+      <version>1.1.0</version>
     </dependency>
 
   </dependencies>

@@ -8,9 +8,9 @@
     <!-- 1. 数据源 : DriverManagerDataSource -->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/ssm_hrms?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false"/>
-        <property name="username" value="root"/>
-        <property name="password" value="jhy..1008611"/>
+        <property name="url" value="jdbc:mysql://47.112.214.94:3306/ssm_hrms?useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false"/>
+        <property name="username" value="admin"/>
+        <property name="password" value="Admin@123"/>
     </bean>
 
     <!--

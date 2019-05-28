@@ -612,8 +612,6 @@
             scriptCharset: "UTF-8", //编码
             success: function (data) { //请求成功的回调函数
                 if (true) {
-                    alert("234324");
-                    console.log(data);
                     setData(data.obj);
 
                 }

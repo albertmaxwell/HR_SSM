@@ -46,6 +46,7 @@
                 <li class="navigation_bar_font" role="presentation"><a href="#" class="contracts_info"><span class="glyphicon glyphicon-user"></span><font style="color: #ffffff;padding-left: 13px">合同信息</font></a></li>
                 <li class="navigation_bar_font" role="presentation"><a href="#" class="con_add_btn" data-toggle="modal" data-target=".con-add-modal"><span class="glyphicon glyphicon-plus"></span><font style="color: #ffffff;padding-left: 10px">新增合同</font></a></li>
                 <li class="navigation_bar_font" role="presentation"><a href="#" class="dept_visualData_btn"><span class="glyphicon glyphicon-minus"></span><font style="color: #ffffff;padding-left: 10px">数据统计</font></a></li>
+                <li class="navigation_bar_font" role="presentation"><a href="#" class="dept_visualCityData_btn"><span class="glyphicon glyphicon-minus"></span><font style="color: #ffffff;padding-left: 10px">城市数据统计</font></a></li>
             </ul>
         </li>
     </ul>
@@ -90,6 +91,13 @@
     $(".dept_visualData_btn").click(function () {
 
         $(this).attr("href", "/hrms/contracts/getDataVisual");
+
+    });
+
+    //合同数据可视化
+    $(".dept_visualCityData_btn").click(function () {
+
+        $(this).attr("href", "/hrms/contracts/getCityDataVisual");
 
     });
     //部门清零这个功能暂未实现

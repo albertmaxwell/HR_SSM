@@ -6,10 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="resource_common" />
+        <module name="resource_files" />
         <module name="SSM_HRMS" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="resource_common" target="1.5" />
+      <module name="resource_files" target="1.8" />
       <module name="SSM_HRMS" target="1.7" />
     </bytecodeTargetLevel>
   </component>

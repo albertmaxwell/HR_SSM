@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="E:/ideaproject/resource_common/resource_common" vcs="Git" />
+    <mapping directory="E:/ideaproject/resource_file/resource_files" vcs="Git" />
   </component>
 </project>

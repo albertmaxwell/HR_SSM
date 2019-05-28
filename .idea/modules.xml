@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SSM_HRMS.iml" filepath="$PROJECT_DIR$/SSM_HRMS.iml" />
+      <module fileurl="file://E:/ideaproject/resource_common/resource_common/resource_common.iml" filepath="E:/ideaproject/resource_common/resource_common/resource_common.iml" />
+      <module fileurl="file://E:/ideaproject/resource_file/resource_files/resource_files.iml" filepath="E:/ideaproject/resource_file/resource_files/resource_files.iml" />
     </modules>
   </component>
 </project>
