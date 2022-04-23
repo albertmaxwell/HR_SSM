@@ -10,7 +10,7 @@
 
 
   <properties>
-    <spring.version>4.2.9.RELEASE</spring.version>
+    <spring.version>5.3.19</spring.version>
     <jackson.version>2.5.4</jackson.version>
     <jjwt.version>0.9.0</jjwt.version>
   </properties>
